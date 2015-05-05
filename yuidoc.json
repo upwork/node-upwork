@@ -1,0 +1,11 @@
+{
+    "name": "node-upwork",
+    "description": "Node.JS bindings for Upwork API",
+    "version": "0.2.2",
+    "url": "https://developers.upwork.com/",
+    "logo": "https://developers.upwork.com/_static/img/logo-white.png",
+    "options": {
+        "outdir": "./docs",
+        "ignorePaths": [ "examples", "test", "node_modules" ]
+    }
+}

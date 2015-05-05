@@ -1,0 +1,43 @@
+{
+  "name": "upwork-api",
+  "description": "Node.JS bindings for Upwork API",
+  "version": "1.0.0",
+  "author": {
+    "name": "Maksym Novozhylov",
+    "email": "mnovozhilov@upwork.com"
+  },
+  "contributors": [
+    {
+      "name": "Maksym Novozhylov",
+      "url": "https://github.com/mnovozhylov"
+    }
+  ],
+  "homepage": "https://developers.upwork.com",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/upwork/node-upwork.git"
+  },
+  "main": "index",
+  "dependencies": {
+    "oauth": "0.9.10",
+    "node-upwork": "0.0.7",
+    "qs": "~0.6.5",
+    "pkginfo": "*"
+  },
+  "keywords": [
+    "oauth",
+    "rest",
+    "upwork",
+    "api",
+    "wrapper"
+  ],
+  "scripts": {
+    "test": "mocha --timeout 3500"
+  },
+  "devDependencies": {
+    "mocha": "~1.21.4"
+  },
+  "engines": {
+    "node": "*"
+  }
+}
