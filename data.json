@@ -1,0 +1,5337 @@
+{
+    "project": {
+        "name": "node-upwork",
+        "description": "Node.JS bindings for Upwork API",
+        "version": "1.0.0",
+        "url": "https://developers.upwork.com/",
+        "logo": "https://developers.upwork.com/_static/img/logo-white.png"
+    },
+    "files": {
+        "lib/routers/activities/engagement.js": {
+            "name": "lib/routers/activities/engagement.js",
+            "modules": {
+                "routes.activities.engagement": 1
+            },
+            "classes": {
+                "Engagement": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/routers/activities/team.js": {
+            "name": "lib/routers/activities/team.js",
+            "modules": {
+                "routes.activities.team": 1
+            },
+            "classes": {
+                "Team": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/routers/freelancers/profile.js": {
+            "name": "lib/routers/freelancers/profile.js",
+            "modules": {
+                "routes.freelancers.profile": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/routers/freelancers/search.js": {
+            "name": "lib/routers/freelancers/search.js",
+            "modules": {
+                "routes.freelancers.search": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/routers/hr/clients/applications.js": {
+            "name": "lib/routers/hr/clients/applications.js",
+            "modules": {
+                "routes.hr.clients.applications": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/routers/hr/clients/offers.js": {
+            "name": "lib/routers/hr/clients/offers.js",
+            "modules": {
+                "routes.hr.clients.offers": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/routers/hr/freelancers/applications.js": {
+            "name": "lib/routers/hr/freelancers/applications.js",
+            "modules": {
+                "routes.hr.contractors.applications": 1
+            },
+            "classes": {
+                "Applications": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/routers/hr/freelancers/offers.js": {
+            "name": "lib/routers/hr/freelancers/offers.js",
+            "modules": {
+                "routes.hr.contractors.offers": 1
+            },
+            "classes": {
+                "Offers": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/routers/hr/contracts.js": {
+            "name": "lib/routers/hr/contracts.js",
+            "modules": {
+                "routes.hr.contracts": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/routers/hr/engagements.js": {
+            "name": "lib/routers/hr/engagements.js",
+            "modules": {
+                "routes.hr.engagements": 1
+            },
+            "classes": {
+                "Engagements": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/routers/hr/interviews.js": {
+            "name": "lib/routers/hr/interviews.js",
+            "modules": {
+                "routes.hr.interviews": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/routers/hr/jobs.js": {
+            "name": "lib/routers/hr/jobs.js",
+            "modules": {
+                "routes.hr.jobs": 1
+            },
+            "classes": {
+                "Jobs": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/routers/hr/milestones.js": {
+            "name": "lib/routers/hr/milestones.js",
+            "modules": {
+                "routes.hr.milestones": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/routers/hr/roles.js": {
+            "name": "lib/routers/hr/roles.js",
+            "modules": {
+                "routes.hr.roles": 1
+            },
+            "classes": {
+                "Roles": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/routers/hr/submissions.js": {
+            "name": "lib/routers/hr/submissions.js",
+            "modules": {
+                "routes.hr.submissions": 1
+            },
+            "classes": {
+                "Interviews": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/routers/jobs/profile.js": {
+            "name": "lib/routers/jobs/profile.js",
+            "modules": {
+                "routes.jobs.profile": 1
+            },
+            "classes": {
+                "Profile": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/routers/jobs/search.js": {
+            "name": "lib/routers/jobs/search.js",
+            "modules": {
+                "routes.jobs.search": 1
+            },
+            "classes": {
+                "Search": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/routers/organization/companies.js": {
+            "name": "lib/routers/organization/companies.js",
+            "modules": {
+                "routes.organization.companies": 1
+            },
+            "classes": {
+                "Companies": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/routers/organization/teams.js": {
+            "name": "lib/routers/organization/teams.js",
+            "modules": {
+                "routes.organization.teams": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/routers/organization/users.js": {
+            "name": "lib/routers/organization/users.js",
+            "modules": {
+                "routes.organization.users": 1
+            },
+            "classes": {
+                "Users": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/routers/reports/finance/accounts.js": {
+            "name": "lib/routers/reports/finance/accounts.js",
+            "modules": {
+                "routes.reports.finance.accounts": 1
+            },
+            "classes": {
+                "Accounts": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/routers/reports/finance/billings.js": {
+            "name": "lib/routers/reports/finance/billings.js",
+            "modules": {
+                "routes.reports.finance.billings": 1
+            },
+            "classes": {
+                "Billings": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/routers/reports/finance/earnings.js": {
+            "name": "lib/routers/reports/finance/earnings.js",
+            "modules": {
+                "routes.reports.finance.earnings": 1
+            },
+            "classes": {
+                "Earnings": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/routers/reports/time.js": {
+            "name": "lib/routers/reports/time.js",
+            "modules": {
+                "routes.reports.time": 1
+            },
+            "classes": {
+                "Time": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/routers/auth.js": {
+            "name": "lib/routers/auth.js",
+            "modules": {
+                "routes.auth": 1
+            },
+            "classes": {
+                "Auth": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/routers/mc.js": {
+            "name": "lib/routers/mc.js",
+            "modules": {
+                "routes.mc": 1
+            },
+            "classes": {
+                "Mc": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/routers/metadata.js": {
+            "name": "lib/routers/metadata.js",
+            "modules": {
+                "routes.metadata": 1
+            },
+            "classes": {
+                "Metadata": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/routers/payments.js": {
+            "name": "lib/routers/payments.js",
+            "modules": {
+                "routes.payments": 1
+            },
+            "classes": {
+                "Payments": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/routers/snapshot.js": {
+            "name": "lib/routers/snapshot.js",
+            "modules": {
+                "routes.snapshot": 1
+            },
+            "classes": {
+                "Snapshot": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/routers/teams.js": {
+            "name": "lib/routers/teams.js",
+            "modules": {
+                "routes.teams": 1
+            },
+            "classes": {
+                "Teams": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/routers/workdiary.js": {
+            "name": "lib/routers/workdiary.js",
+            "modules": {
+                "routes.workdiary": 1
+            },
+            "classes": {
+                "Workdiary": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/api.js": {
+            "name": "lib/api.js",
+            "modules": {
+                "api": 1
+            },
+            "classes": {
+                "UpworkApi": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/client.js": {
+            "name": "lib/client.js",
+            "modules": {
+                "client": 1
+            },
+            "classes": {
+                "Client": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/config.js": {
+            "name": "lib/config.js",
+            "modules": {
+                "config": 1
+            },
+            "classes": {
+                "Config": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/debug.js": {
+            "name": "lib/debug.js",
+            "modules": {
+                "debug": 1
+            },
+            "classes": {
+                "Debug": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "routes.activities.engagement": {
+            "name": "routes.activities.engagement",
+            "submodules": {},
+            "classes": {
+                "Engagement": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/routers/activities/engagement.js",
+            "line": 24
+        },
+        "routes.activities.team": {
+            "name": "routes.activities.team",
+            "submodules": {},
+            "classes": {
+                "Team": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/routers/activities/team.js",
+            "line": 24
+        },
+        "routes.freelancers.profile": {
+            "name": "routes.freelancers.profile",
+            "submodules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/routers/freelancers/profile.js",
+            "line": 11
+        },
+        "routes.freelancers.search": {
+            "name": "routes.freelancers.search",
+            "submodules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/routers/freelancers/search.js",
+            "line": 11
+        },
+        "routes.hr.clients.applications": {
+            "name": "routes.hr.clients.applications",
+            "submodules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/routers/hr/clients/applications.js",
+            "line": 11
+        },
+        "routes.hr.clients.offers": {
+            "name": "routes.hr.clients.offers",
+            "submodules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/routers/hr/clients/offers.js",
+            "line": 11
+        },
+        "routes.hr.contractors.applications": {
+            "name": "routes.hr.contractors.applications",
+            "submodules": {},
+            "classes": {
+                "Applications": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/routers/hr/freelancers/applications.js",
+            "line": 24
+        },
+        "routes.hr.contractors.offers": {
+            "name": "routes.hr.contractors.offers",
+            "submodules": {},
+            "classes": {
+                "Offers": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/routers/hr/freelancers/offers.js",
+            "line": 24
+        },
+        "routes.hr.contracts": {
+            "name": "routes.hr.contracts",
+            "submodules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/routers/hr/contracts.js",
+            "line": 11
+        },
+        "routes.hr.engagements": {
+            "name": "routes.hr.engagements",
+            "submodules": {},
+            "classes": {
+                "Engagements": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/routers/hr/engagements.js",
+            "line": 24
+        },
+        "routes.hr.interviews": {
+            "name": "routes.hr.interviews",
+            "submodules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/routers/hr/interviews.js",
+            "line": 11
+        },
+        "routes.hr.jobs": {
+            "name": "routes.hr.jobs",
+            "submodules": {},
+            "classes": {
+                "Jobs": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/routers/hr/jobs.js",
+            "line": 24
+        },
+        "routes.hr.milestones": {
+            "name": "routes.hr.milestones",
+            "submodules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/routers/hr/milestones.js",
+            "line": 11
+        },
+        "routes.hr.roles": {
+            "name": "routes.hr.roles",
+            "submodules": {},
+            "classes": {
+                "Roles": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/routers/hr/roles.js",
+            "line": 24
+        },
+        "routes.hr.submissions": {
+            "name": "routes.hr.submissions",
+            "submodules": {},
+            "classes": {
+                "Interviews": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/routers/hr/submissions.js",
+            "line": 24
+        },
+        "routes.jobs.profile": {
+            "name": "routes.jobs.profile",
+            "submodules": {},
+            "classes": {
+                "Profile": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/routers/jobs/profile.js",
+            "line": 24
+        },
+        "routes.jobs.search": {
+            "name": "routes.jobs.search",
+            "submodules": {},
+            "classes": {
+                "Search": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/routers/jobs/search.js",
+            "line": 24
+        },
+        "routes.organization.companies": {
+            "name": "routes.organization.companies",
+            "submodules": {},
+            "classes": {
+                "Companies": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/routers/organization/companies.js",
+            "line": 24
+        },
+        "routes.organization.teams": {
+            "name": "routes.organization.teams",
+            "submodules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/routers/organization/teams.js",
+            "line": 11
+        },
+        "routes.organization.users": {
+            "name": "routes.organization.users",
+            "submodules": {},
+            "classes": {
+                "Users": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/routers/organization/users.js",
+            "line": 24
+        },
+        "routes.reports.finance.accounts": {
+            "name": "routes.reports.finance.accounts",
+            "submodules": {},
+            "classes": {
+                "Accounts": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/routers/reports/finance/accounts.js",
+            "line": 24
+        },
+        "routes.reports.finance.billings": {
+            "name": "routes.reports.finance.billings",
+            "submodules": {},
+            "classes": {
+                "Billings": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/routers/reports/finance/billings.js",
+            "line": 24
+        },
+        "routes.reports.finance.earnings": {
+            "name": "routes.reports.finance.earnings",
+            "submodules": {},
+            "classes": {
+                "Earnings": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/routers/reports/finance/earnings.js",
+            "line": 24
+        },
+        "routes.reports.time": {
+            "name": "routes.reports.time",
+            "submodules": {},
+            "classes": {
+                "Time": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/routers/reports/time.js",
+            "line": 24
+        },
+        "routes.auth": {
+            "name": "routes.auth",
+            "submodules": {},
+            "classes": {
+                "Auth": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/routers/auth.js",
+            "line": 24
+        },
+        "routes.mc": {
+            "name": "routes.mc",
+            "submodules": {},
+            "classes": {
+                "Mc": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/routers/mc.js",
+            "line": 24
+        },
+        "routes.metadata": {
+            "name": "routes.metadata",
+            "submodules": {},
+            "classes": {
+                "Metadata": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/routers/metadata.js",
+            "line": 24
+        },
+        "routes.payments": {
+            "name": "routes.payments",
+            "submodules": {},
+            "classes": {
+                "Payments": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/routers/payments.js",
+            "line": 24
+        },
+        "routes.snapshot": {
+            "name": "routes.snapshot",
+            "submodules": {},
+            "classes": {
+                "Snapshot": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/routers/snapshot.js",
+            "line": 24
+        },
+        "routes.teams": {
+            "name": "routes.teams",
+            "submodules": {},
+            "classes": {
+                "Teams": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/routers/teams.js",
+            "line": 24
+        },
+        "routes.workdiary": {
+            "name": "routes.workdiary",
+            "submodules": {},
+            "classes": {
+                "Workdiary": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/routers/workdiary.js",
+            "line": 24
+        },
+        "api": {
+            "name": "api",
+            "submodules": {},
+            "classes": {
+                "UpworkApi": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/api.js",
+            "line": 33,
+            "requires": [
+                "debug",
+                "config",
+                "client"
+            ]
+        },
+        "client": {
+            "name": "client",
+            "submodules": {},
+            "classes": {
+                "Client": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/client.js",
+            "line": 30,
+            "requires": [
+                "node-upwork"
+            ]
+        },
+        "config": {
+            "name": "config",
+            "submodules": {},
+            "classes": {
+                "Config": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/config.js",
+            "line": 15
+        },
+        "debug": {
+            "name": "debug",
+            "submodules": {},
+            "classes": {
+                "Debug": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/debug.js",
+            "line": 22
+        }
+    },
+    "classes": {
+        "Engagement": {
+            "name": "Engagement",
+            "shortname": "Engagement",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "routes.activities.engagement",
+            "namespace": "",
+            "file": "lib/routers/activities/engagement.js",
+            "line": 24,
+            "is_constructor": 1
+        },
+        "Team": {
+            "name": "Team",
+            "shortname": "Team",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "routes.activities.team",
+            "namespace": "",
+            "file": "lib/routers/activities/team.js",
+            "line": 24,
+            "is_constructor": 1
+        },
+        "Profile": {
+            "name": "Profile",
+            "shortname": "Profile",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "routes.jobs.profile",
+            "namespace": "",
+            "file": "lib/routers/jobs/profile.js",
+            "line": 24,
+            "is_constructor": 1
+        },
+        "Search": {
+            "name": "Search",
+            "shortname": "Search",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "routes.jobs.search",
+            "namespace": "",
+            "file": "lib/routers/jobs/search.js",
+            "line": 24,
+            "is_constructor": 1
+        },
+        "Applications": {
+            "name": "Applications",
+            "shortname": "Applications",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "routes.hr.contractors.applications",
+            "namespace": "",
+            "file": "lib/routers/hr/freelancers/applications.js",
+            "line": 24,
+            "is_constructor": 1
+        },
+        "Offers": {
+            "name": "Offers",
+            "shortname": "Offers",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "routes.hr.contractors.offers",
+            "namespace": "",
+            "file": "lib/routers/hr/freelancers/offers.js",
+            "line": 24,
+            "is_constructor": 1
+        },
+        "Users": {
+            "name": "Users",
+            "shortname": "Users",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "routes.organization.users",
+            "namespace": "",
+            "file": "lib/routers/organization/users.js",
+            "line": 24,
+            "is_constructor": 1
+        },
+        "Engagements": {
+            "name": "Engagements",
+            "shortname": "Engagements",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "routes.hr.engagements",
+            "namespace": "",
+            "file": "lib/routers/hr/engagements.js",
+            "line": 24,
+            "is_constructor": 1
+        },
+        "Interviews": {
+            "name": "Interviews",
+            "shortname": "Interviews",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "routes.hr.submissions",
+            "namespace": "",
+            "file": "lib/routers/hr/submissions.js",
+            "line": 24,
+            "is_constructor": 1
+        },
+        "Jobs": {
+            "name": "Jobs",
+            "shortname": "Jobs",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "routes.hr.jobs",
+            "namespace": "",
+            "file": "lib/routers/hr/jobs.js",
+            "line": 24,
+            "is_constructor": 1
+        },
+        "Roles": {
+            "name": "Roles",
+            "shortname": "Roles",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "routes.hr.roles",
+            "namespace": "",
+            "file": "lib/routers/hr/roles.js",
+            "line": 24,
+            "is_constructor": 1
+        },
+        "Companies": {
+            "name": "Companies",
+            "shortname": "Companies",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "routes.organization.companies",
+            "namespace": "",
+            "file": "lib/routers/organization/companies.js",
+            "line": 24,
+            "is_constructor": 1
+        },
+        "Teams": {
+            "name": "Teams",
+            "shortname": "Teams",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "routes.teams",
+            "namespace": "",
+            "file": "lib/routers/teams.js",
+            "line": 24,
+            "is_constructor": 1
+        },
+        "Accounts": {
+            "name": "Accounts",
+            "shortname": "Accounts",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "routes.reports.finance.accounts",
+            "namespace": "",
+            "file": "lib/routers/reports/finance/accounts.js",
+            "line": 24,
+            "is_constructor": 1
+        },
+        "Billings": {
+            "name": "Billings",
+            "shortname": "Billings",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "routes.reports.finance.billings",
+            "namespace": "",
+            "file": "lib/routers/reports/finance/billings.js",
+            "line": 24,
+            "is_constructor": 1
+        },
+        "Earnings": {
+            "name": "Earnings",
+            "shortname": "Earnings",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "routes.reports.finance.earnings",
+            "namespace": "",
+            "file": "lib/routers/reports/finance/earnings.js",
+            "line": 24,
+            "is_constructor": 1
+        },
+        "Time": {
+            "name": "Time",
+            "shortname": "Time",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "routes.reports.time",
+            "namespace": "",
+            "file": "lib/routers/reports/time.js",
+            "line": 24,
+            "is_constructor": 1
+        },
+        "Auth": {
+            "name": "Auth",
+            "shortname": "Auth",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "routes.auth",
+            "namespace": "",
+            "file": "lib/routers/auth.js",
+            "line": 24,
+            "is_constructor": 1
+        },
+        "Mc": {
+            "name": "Mc",
+            "shortname": "Mc",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "routes.mc",
+            "namespace": "",
+            "file": "lib/routers/mc.js",
+            "line": 24,
+            "description": "Message Center",
+            "is_constructor": 1
+        },
+        "Metadata": {
+            "name": "Metadata",
+            "shortname": "Metadata",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "routes.metadata",
+            "namespace": "",
+            "file": "lib/routers/metadata.js",
+            "line": 24,
+            "is_constructor": 1
+        },
+        "Payments": {
+            "name": "Payments",
+            "shortname": "Payments",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "routes.payments",
+            "namespace": "",
+            "file": "lib/routers/payments.js",
+            "line": 24,
+            "description": "Custom Payments",
+            "is_constructor": 1
+        },
+        "Snapshot": {
+            "name": "Snapshot",
+            "shortname": "Snapshot",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "routes.snapshot",
+            "namespace": "",
+            "file": "lib/routers/snapshot.js",
+            "line": 24,
+            "description": "Snapshot Info",
+            "is_constructor": 1
+        },
+        "Workdiary": {
+            "name": "Workdiary",
+            "shortname": "Workdiary",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "routes.workdiary",
+            "namespace": "",
+            "file": "lib/routers/workdiary.js",
+            "line": 24,
+            "is_constructor": 1
+        },
+        "UpworkApi": {
+            "name": "UpworkApi",
+            "shortname": "UpworkApi",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "api",
+            "namespace": "",
+            "file": "lib/api.js",
+            "line": 33,
+            "is_constructor": 1
+        },
+        "Client": {
+            "name": "Client",
+            "shortname": "Client",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "client",
+            "namespace": "",
+            "file": "lib/client.js",
+            "line": 30,
+            "is_constructor": 1
+        },
+        "Config": {
+            "name": "Config",
+            "shortname": "Config",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "config",
+            "namespace": "",
+            "file": "lib/config.js",
+            "line": 15,
+            "is_constructor": 1
+        },
+        "Debug": {
+            "name": "Debug",
+            "shortname": "Debug",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "debug",
+            "namespace": "",
+            "file": "lib/debug.js",
+            "line": 22
+        }
+    },
+    "classitems": [
+        {
+            "file": "lib/routers/activities/engagement.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "09/23/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Engagement"
+        },
+        {
+            "file": "lib/routers/activities/engagement.js",
+            "line": 15,
+            "itemtype": "property",
+            "name": "entryPoint",
+            "type": "String",
+            "default": "api",
+            "static": 1,
+            "final": 1,
+            "class": "Engagement",
+            "module": "routes.activities.engagement"
+        },
+        {
+            "file": "lib/routers/activities/engagement.js",
+            "line": 33,
+            "description": "List activities for specific engagement",
+            "itemtype": "method",
+            "name": "getSpecific",
+            "params": [
+                {
+                    "name": "engagementRef",
+                    "description": "Engagement reference",
+                    "type": "Integer"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Engagement",
+            "module": "routes.activities.engagement"
+        },
+        {
+            "file": "lib/routers/activities/engagement.js",
+            "line": 46,
+            "description": "Assign engagements to the list of activities",
+            "itemtype": "method",
+            "name": "assign",
+            "params": [
+                {
+                    "name": "company",
+                    "description": "Company ID",
+                    "type": "String"
+                },
+                {
+                    "name": "team",
+                    "description": "Team ID",
+                    "type": "String"
+                },
+                {
+                    "name": "engagementRef",
+                    "description": "Engagement reference",
+                    "type": "Integer"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Engagement",
+            "module": "routes.activities.engagement"
+        },
+        {
+            "file": "lib/routers/activities/team.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "09/24/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Team",
+            "module": "routes.activities.engagement"
+        },
+        {
+            "file": "lib/routers/activities/team.js",
+            "line": 15,
+            "itemtype": "property",
+            "name": "entryPoint",
+            "type": "String",
+            "default": "api",
+            "static": 1,
+            "final": 1,
+            "class": "Team",
+            "module": "routes.activities.team"
+        },
+        {
+            "file": "lib/routers/activities/team.js",
+            "line": 33,
+            "description": "Get by type",
+            "itemtype": "method",
+            "name": "_getUrlByType",
+            "params": [
+                {
+                    "name": "company",
+                    "description": "Company ID",
+                    "type": "String"
+                },
+                {
+                    "name": "team",
+                    "description": "Team ID",
+                    "type": "String"
+                },
+                {
+                    "name": "code",
+                    "description": "Code",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "Relative api URL",
+                "type": "String"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "Team",
+            "module": "routes.activities.team"
+        },
+        {
+            "file": "lib/routers/activities/team.js",
+            "line": 53,
+            "description": "List all oTask/Activity records within a Team",
+            "itemtype": "method",
+            "name": "getList",
+            "params": [
+                {
+                    "name": "company",
+                    "description": "Company ID",
+                    "type": "String"
+                },
+                {
+                    "name": "team",
+                    "description": "Team ID",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Team",
+            "module": "routes.activities.team"
+        },
+        {
+            "file": "lib/routers/activities/team.js",
+            "line": 67,
+            "description": "List all oTask/Activity records within a Team by specified code(s)",
+            "itemtype": "method",
+            "name": "getSpecificList",
+            "params": [
+                {
+                    "name": "company",
+                    "description": "Company ID",
+                    "type": "String"
+                },
+                {
+                    "name": "team",
+                    "description": "Team ID",
+                    "type": "String"
+                },
+                {
+                    "name": "code",
+                    "description": "Code",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Team",
+            "module": "routes.activities.team"
+        },
+        {
+            "file": "lib/routers/activities/team.js",
+            "line": 82,
+            "description": "Create an oTask/Activity record within a Team",
+            "itemtype": "method",
+            "name": "addActivity",
+            "params": [
+                {
+                    "name": "company",
+                    "description": "Company ID",
+                    "type": "String"
+                },
+                {
+                    "name": "team",
+                    "description": "Team ID",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Team",
+            "module": "routes.activities.team"
+        },
+        {
+            "file": "lib/routers/activities/team.js",
+            "line": 96,
+            "description": "Update specific oTask/Activity record within a Team",
+            "itemtype": "method",
+            "name": "updateActivity",
+            "params": [
+                {
+                    "name": "company",
+                    "description": "Company ID",
+                    "type": "String"
+                },
+                {
+                    "name": "team",
+                    "description": "Team ID",
+                    "type": "String"
+                },
+                {
+                    "name": "code",
+                    "description": "Code",
+                    "type": "String"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Team",
+            "module": "routes.activities.team"
+        },
+        {
+            "file": "lib/routers/activities/team.js",
+            "line": 112,
+            "description": "Archive specific oTask/Activity record within a Team",
+            "itemtype": "method",
+            "name": "archiveActivity",
+            "params": [
+                {
+                    "name": "company",
+                    "description": "Company ID",
+                    "type": "String"
+                },
+                {
+                    "name": "team",
+                    "description": "Team ID",
+                    "type": "String"
+                },
+                {
+                    "name": "code",
+                    "description": "Code, may be a semicolon separated list of codes",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Team",
+            "module": "routes.activities.team"
+        },
+        {
+            "file": "lib/routers/activities/team.js",
+            "line": 127,
+            "description": "Unarchive specific oTask/Activity record within a Team",
+            "itemtype": "method",
+            "name": "unarchiveActivity",
+            "params": [
+                {
+                    "name": "company",
+                    "description": "Company ID",
+                    "type": "String"
+                },
+                {
+                    "name": "team",
+                    "description": "Team ID",
+                    "type": "String"
+                },
+                {
+                    "name": "code",
+                    "description": "Code, may be a semicolon separated list of codes",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Team",
+            "module": "routes.activities.team"
+        },
+        {
+            "file": "lib/routers/activities/team.js",
+            "line": 142,
+            "description": "Update a bulk of oTask/Activity records",
+            "itemtype": "method",
+            "name": "updateBatch",
+            "params": [
+                {
+                    "name": "company",
+                    "description": "Company ID",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Team",
+            "module": "routes.activities.team"
+        },
+        {
+            "file": "lib/routers/freelancers/profile.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "09/24/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Profile",
+            "module": "routes.activities.team"
+        },
+        {
+            "file": "lib/routers/freelancers/profile.js",
+            "line": 15,
+            "itemtype": "property",
+            "name": "entryPoint",
+            "type": "String",
+            "default": "api",
+            "static": 1,
+            "final": 1,
+            "class": "Profile",
+            "module": "routes.freelancers.profile"
+        },
+        {
+            "file": "lib/routers/freelancers/profile.js",
+            "line": 33,
+            "description": "Get specific Freelancer Profile",
+            "itemtype": "method",
+            "name": "getSpecific",
+            "params": [
+                {
+                    "name": "key",
+                    "description": "Profile key",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Profile",
+            "module": "routes.freelancers.profile"
+        },
+        {
+            "file": "lib/routers/freelancers/profile.js",
+            "line": 46,
+            "description": "Get specific Freelancer Profile in brief",
+            "itemtype": "method",
+            "name": "getSpecificBrief",
+            "params": [
+                {
+                    "name": "key",
+                    "description": "Profile key",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Profile",
+            "module": "routes.freelancers.profile"
+        },
+        {
+            "file": "lib/routers/freelancers/search.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "09/24/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Search",
+            "module": "routes.freelancers.profile"
+        },
+        {
+            "file": "lib/routers/freelancers/search.js",
+            "line": 15,
+            "itemtype": "property",
+            "name": "entryPoint",
+            "type": "String",
+            "default": "api",
+            "static": 1,
+            "final": 1,
+            "class": "Search",
+            "module": "routes.freelancers.search"
+        },
+        {
+            "file": "lib/routers/freelancers/search.js",
+            "line": 33,
+            "description": "Search Freelancers",
+            "itemtype": "method",
+            "name": "find",
+            "params": [
+                {
+                    "name": "params",
+                    "description": "Parameters, i.e. search criteria",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Search",
+            "module": "routes.freelancers.search"
+        },
+        {
+            "file": "lib/routers/hr/clients/applications.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "09/24/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Applications",
+            "module": "routes.freelancers.search"
+        },
+        {
+            "file": "lib/routers/hr/clients/applications.js",
+            "line": 15,
+            "itemtype": "property",
+            "name": "entryPoint",
+            "type": "String",
+            "default": "api",
+            "static": 1,
+            "final": 1,
+            "class": "Applications",
+            "module": "routes.hr.clients.applications"
+        },
+        {
+            "file": "lib/routers/hr/clients/applications.js",
+            "line": 33,
+            "description": "Get list of applications",
+            "itemtype": "method",
+            "name": "getList",
+            "params": [
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Applications",
+            "module": "routes.hr.clients.applications"
+        },
+        {
+            "file": "lib/routers/hr/clients/applications.js",
+            "line": 46,
+            "description": "Get specific application",
+            "itemtype": "method",
+            "name": "getSpecific",
+            "params": [
+                {
+                    "name": "reference",
+                    "description": "Application reference",
+                    "type": "Integer"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Applications",
+            "module": "routes.hr.clients.applications"
+        },
+        {
+            "file": "lib/routers/hr/clients/offers.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "09/24/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Offers",
+            "module": "routes.hr.clients.applications"
+        },
+        {
+            "file": "lib/routers/hr/clients/offers.js",
+            "line": 15,
+            "itemtype": "property",
+            "name": "entryPoint",
+            "type": "String",
+            "default": "api",
+            "static": 1,
+            "final": 1,
+            "class": "Offers",
+            "module": "routes.hr.clients.offers"
+        },
+        {
+            "file": "lib/routers/hr/clients/offers.js",
+            "line": 33,
+            "description": "Get list of offers",
+            "itemtype": "method",
+            "name": "getList",
+            "params": [
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Offers",
+            "module": "routes.hr.clients.offers"
+        },
+        {
+            "file": "lib/routers/hr/clients/offers.js",
+            "line": 46,
+            "description": "Get specific offer",
+            "itemtype": "method",
+            "name": "getSpecific",
+            "params": [
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "reference",
+                    "description": "Offer reference",
+                    "type": "Integer"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Offers",
+            "module": "routes.hr.clients.offers"
+        },
+        {
+            "file": "lib/routers/hr/clients/offers.js",
+            "line": 60,
+            "description": "Send client offer",
+            "itemtype": "method",
+            "name": "makeOffer",
+            "params": [
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Offers",
+            "module": "routes.hr.clients.offers"
+        },
+        {
+            "file": "lib/routers/hr/freelancers/applications.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "09/24/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Applications",
+            "module": "routes.hr.clients.offers"
+        },
+        {
+            "file": "lib/routers/hr/freelancers/applications.js",
+            "line": 15,
+            "itemtype": "property",
+            "name": "entryPoint",
+            "type": "String",
+            "default": "api",
+            "static": 1,
+            "final": 1,
+            "class": "Applications",
+            "module": "routes.hr.contractors.applications"
+        },
+        {
+            "file": "lib/routers/hr/freelancers/applications.js",
+            "line": 33,
+            "description": "Get list of applications",
+            "itemtype": "method",
+            "name": "getList",
+            "params": [
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Applications",
+            "module": "routes.hr.contractors.applications"
+        },
+        {
+            "file": "lib/routers/hr/freelancers/applications.js",
+            "line": 46,
+            "description": "Get specific application",
+            "itemtype": "method",
+            "name": "getSpecific",
+            "params": [
+                {
+                    "name": "reference",
+                    "description": "Application reference",
+                    "type": "Integer"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Applications",
+            "module": "routes.hr.contractors.applications"
+        },
+        {
+            "file": "lib/routers/hr/freelancers/offers.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "09/24/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Offers",
+            "module": "routes.hr.contractors.applications"
+        },
+        {
+            "file": "lib/routers/hr/freelancers/offers.js",
+            "line": 15,
+            "itemtype": "property",
+            "name": "entryPoint",
+            "type": "String",
+            "default": "api",
+            "static": 1,
+            "final": 1,
+            "class": "Offers",
+            "module": "routes.hr.contractors.offers"
+        },
+        {
+            "file": "lib/routers/hr/freelancers/offers.js",
+            "line": 33,
+            "description": "Get list of offers",
+            "itemtype": "method",
+            "name": "getList",
+            "params": [
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Offers",
+            "module": "routes.hr.contractors.offers"
+        },
+        {
+            "file": "lib/routers/hr/freelancers/offers.js",
+            "line": 46,
+            "description": "Get specific offer",
+            "itemtype": "method",
+            "name": "getSpecific",
+            "params": [
+                {
+                    "name": "reference",
+                    "description": "Offer reference",
+                    "type": "Integer"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Offers",
+            "module": "routes.hr.contractors.offers"
+        },
+        {
+            "file": "lib/routers/hr/freelancers/offers.js",
+            "line": 59,
+            "description": "Run specific action",
+            "itemtype": "method",
+            "name": "actions",
+            "params": [
+                {
+                    "name": "reference",
+                    "description": "Offer reference",
+                    "type": "Integer"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Offers",
+            "module": "routes.hr.contractors.offers"
+        },
+        {
+            "file": "lib/routers/hr/contracts.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "09/24/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Users",
+            "module": "routes.hr.contractors.offers"
+        },
+        {
+            "file": "lib/routers/hr/contracts.js",
+            "line": 15,
+            "itemtype": "property",
+            "name": "entryPoint",
+            "type": "String",
+            "default": "api",
+            "static": 1,
+            "final": 1,
+            "class": "Users",
+            "module": "routes.hr.contracts"
+        },
+        {
+            "file": "lib/routers/hr/contracts.js",
+            "line": 33,
+            "description": "Suspend Contract",
+            "itemtype": "method",
+            "name": "suspendContract",
+            "params": [
+                {
+                    "name": "reference",
+                    "description": "Contract reference",
+                    "type": "Integer"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Users",
+            "module": "routes.hr.contracts"
+        },
+        {
+            "file": "lib/routers/hr/contracts.js",
+            "line": 47,
+            "description": "Restart Contract",
+            "itemtype": "method",
+            "name": "restartContract",
+            "params": [
+                {
+                    "name": "reference",
+                    "description": "Contract reference",
+                    "type": "Integer"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Users",
+            "module": "routes.hr.contracts"
+        },
+        {
+            "file": "lib/routers/hr/contracts.js",
+            "line": 61,
+            "description": "End Contract",
+            "itemtype": "method",
+            "name": "endContract",
+            "params": [
+                {
+                    "name": "reference",
+                    "description": "Contract reference",
+                    "type": "Integer"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Users",
+            "module": "routes.hr.contracts"
+        },
+        {
+            "file": "lib/routers/hr/engagements.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "09/24/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Engagements",
+            "module": "routes.hr.contracts"
+        },
+        {
+            "file": "lib/routers/hr/engagements.js",
+            "line": 15,
+            "itemtype": "property",
+            "name": "entryPoint",
+            "type": "String",
+            "default": "api",
+            "static": 1,
+            "final": 1,
+            "class": "Engagements",
+            "module": "routes.hr.engagements"
+        },
+        {
+            "file": "lib/routers/hr/engagements.js",
+            "line": 33,
+            "description": "Get list of engagements",
+            "itemtype": "method",
+            "name": "getList",
+            "params": [
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Engagements",
+            "module": "routes.hr.engagements"
+        },
+        {
+            "file": "lib/routers/hr/engagements.js",
+            "line": 46,
+            "description": "Get specific engagement",
+            "itemtype": "method",
+            "name": "getSpecific",
+            "params": [
+                {
+                    "name": "reference",
+                    "description": "Engagement reference",
+                    "type": "Integer"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Engagements",
+            "module": "routes.hr.engagements"
+        },
+        {
+            "file": "lib/routers/hr/interviews.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "09/24/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Interviews",
+            "module": "routes.hr.engagements"
+        },
+        {
+            "file": "lib/routers/hr/interviews.js",
+            "line": 15,
+            "itemtype": "property",
+            "name": "entryPoint",
+            "type": "String",
+            "default": "api",
+            "static": 1,
+            "final": 1,
+            "class": "Interviews",
+            "module": "routes.hr.interviews"
+        },
+        {
+            "file": "lib/routers/hr/interviews.js",
+            "line": 33,
+            "description": "Invite to interview",
+            "itemtype": "method",
+            "name": "invite",
+            "params": [
+                {
+                    "name": "jobKey",
+                    "description": "Job key",
+                    "type": "String"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Interviews",
+            "module": "routes.hr.interviews"
+        },
+        {
+            "file": "lib/routers/hr/jobs.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "09/24/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Jobs",
+            "module": "routes.hr.interviews"
+        },
+        {
+            "file": "lib/routers/hr/jobs.js",
+            "line": 15,
+            "itemtype": "property",
+            "name": "entryPoint",
+            "type": "String",
+            "default": "api",
+            "static": 1,
+            "final": 1,
+            "class": "Jobs",
+            "module": "routes.hr.jobs"
+        },
+        {
+            "file": "lib/routers/hr/jobs.js",
+            "line": 33,
+            "description": "Get list of jobs",
+            "itemtype": "method",
+            "name": "getList",
+            "params": [
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Jobs",
+            "module": "routes.hr.jobs"
+        },
+        {
+            "file": "lib/routers/hr/jobs.js",
+            "line": 46,
+            "description": "Get specific job",
+            "itemtype": "method",
+            "name": "getSpecific",
+            "params": [
+                {
+                    "name": "key",
+                    "description": "Job key",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Jobs",
+            "module": "routes.hr.jobs"
+        },
+        {
+            "file": "lib/routers/hr/jobs.js",
+            "line": 59,
+            "description": "Post a new job",
+            "itemtype": "method",
+            "name": "postJob",
+            "params": [
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Jobs",
+            "module": "routes.hr.jobs"
+        },
+        {
+            "file": "lib/routers/hr/jobs.js",
+            "line": 72,
+            "description": "Edit existend job",
+            "itemtype": "method",
+            "name": "editJob",
+            "params": [
+                {
+                    "name": "key",
+                    "description": "Job key",
+                    "type": "String"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Jobs",
+            "module": "routes.hr.jobs"
+        },
+        {
+            "file": "lib/routers/hr/jobs.js",
+            "line": 86,
+            "description": "Delete existend job",
+            "itemtype": "method",
+            "name": "deleteJob",
+            "params": [
+                {
+                    "name": "key",
+                    "description": "Job key",
+                    "type": "String"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Jobs",
+            "module": "routes.hr.jobs"
+        },
+        {
+            "file": "lib/routers/hr/milestones.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "11/17/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Interviews",
+            "module": "routes.hr.jobs"
+        },
+        {
+            "file": "lib/routers/hr/milestones.js",
+            "line": 15,
+            "itemtype": "property",
+            "name": "entryPoint",
+            "type": "String",
+            "default": "api",
+            "static": 1,
+            "final": 1,
+            "class": "Interviews",
+            "module": "routes.hr.milestones"
+        },
+        {
+            "file": "lib/routers/hr/milestones.js",
+            "line": 33,
+            "description": "Get active Milestone for specific Contract",
+            "itemtype": "method",
+            "name": "getActiveMilestone",
+            "params": [
+                {
+                    "name": "contractId",
+                    "description": "Contract reference",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Interviews",
+            "module": "routes.hr.milestones"
+        },
+        {
+            "file": "lib/routers/hr/milestones.js",
+            "line": 46,
+            "description": "Get all Submissions for specific Milestone",
+            "itemtype": "method",
+            "name": "getSubmissions",
+            "params": [
+                {
+                    "name": "milestoneId",
+                    "description": "Milestone reference",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Interviews",
+            "module": "routes.hr.milestones"
+        },
+        {
+            "file": "lib/routers/hr/milestones.js",
+            "line": 59,
+            "description": "Create a new Milestone",
+            "itemtype": "method",
+            "name": "create",
+            "params": [
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Interviews",
+            "module": "routes.hr.milestones"
+        },
+        {
+            "file": "lib/routers/hr/milestones.js",
+            "line": 72,
+            "description": "Edit an existing Milestone",
+            "itemtype": "method",
+            "name": "edit",
+            "params": [
+                {
+                    "name": "milestoneId",
+                    "description": "Milestone ID",
+                    "type": "Integer"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Interviews",
+            "module": "routes.hr.milestones"
+        },
+        {
+            "file": "lib/routers/hr/milestones.js",
+            "line": 86,
+            "description": "Activate an existing Milestone",
+            "itemtype": "method",
+            "name": "activate",
+            "params": [
+                {
+                    "name": "milestoneId",
+                    "description": "Milestone ID",
+                    "type": "Integer"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Interviews",
+            "module": "routes.hr.milestones"
+        },
+        {
+            "file": "lib/routers/hr/milestones.js",
+            "line": 100,
+            "description": "Approve an existing Milestone",
+            "itemtype": "method",
+            "name": "approve",
+            "params": [
+                {
+                    "name": "milestoneId",
+                    "description": "Milestone ID",
+                    "type": "Integer"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Interviews",
+            "module": "routes.hr.milestones"
+        },
+        {
+            "file": "lib/routers/hr/milestones.js",
+            "line": 114,
+            "description": "Delete an existing Milestone",
+            "itemtype": "method",
+            "name": "delete",
+            "params": [
+                {
+                    "name": "milestoneId",
+                    "description": "Milestone ID",
+                    "type": "Integer"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Interviews",
+            "module": "routes.hr.milestones"
+        },
+        {
+            "file": "lib/routers/hr/roles.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "09/24/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Roles",
+            "module": "routes.hr.milestones"
+        },
+        {
+            "file": "lib/routers/hr/roles.js",
+            "line": 15,
+            "itemtype": "property",
+            "name": "entryPoint",
+            "type": "String",
+            "default": "api",
+            "static": 1,
+            "final": 1,
+            "class": "Roles",
+            "module": "routes.hr.roles"
+        },
+        {
+            "file": "lib/routers/hr/roles.js",
+            "line": 33,
+            "description": "Get user roles",
+            "itemtype": "method",
+            "name": "getAll",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Roles",
+            "module": "routes.hr.roles"
+        },
+        {
+            "file": "lib/routers/hr/roles.js",
+            "line": 45,
+            "description": "Get by specific user",
+            "itemtype": "method",
+            "name": "getBySpecificUser",
+            "params": [
+                {
+                    "name": "reference",
+                    "description": "User reference",
+                    "type": "Integer"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Roles",
+            "module": "routes.hr.roles"
+        },
+        {
+            "file": "lib/routers/hr/submissions.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "11/17/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Interviews",
+            "module": "routes.hr.roles"
+        },
+        {
+            "file": "lib/routers/hr/submissions.js",
+            "line": 15,
+            "itemtype": "property",
+            "name": "entryPoint",
+            "type": "String",
+            "default": "api",
+            "static": 1,
+            "final": 1,
+            "class": "Interviews",
+            "module": "routes.hr.submissions"
+        },
+        {
+            "file": "lib/routers/hr/submissions.js",
+            "line": 33,
+            "description": "Freelancer submits work for the client to approve",
+            "itemtype": "method",
+            "name": "requestApproval",
+            "params": [
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Interviews",
+            "module": "routes.hr.submissions"
+        },
+        {
+            "file": "lib/routers/hr/submissions.js",
+            "line": 46,
+            "description": "Approve an existing Submission",
+            "itemtype": "method",
+            "name": "approve",
+            "params": [
+                {
+                    "name": "submissionId",
+                    "description": "Submission ID",
+                    "type": "Integer"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Interviews",
+            "module": "routes.hr.submissions"
+        },
+        {
+            "file": "lib/routers/hr/submissions.js",
+            "line": 60,
+            "description": "Reject an existing Submission",
+            "itemtype": "method",
+            "name": "reject",
+            "params": [
+                {
+                    "name": "submissionId",
+                    "description": "Submission ID",
+                    "type": "Integer"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Interviews",
+            "module": "routes.hr.submissions"
+        },
+        {
+            "file": "lib/routers/jobs/profile.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "09/24/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Profile",
+            "module": "routes.hr.submissions"
+        },
+        {
+            "file": "lib/routers/jobs/profile.js",
+            "line": 15,
+            "itemtype": "property",
+            "name": "entryPoint",
+            "type": "String",
+            "default": "api",
+            "static": 1,
+            "final": 1,
+            "class": "Profile",
+            "module": "routes.jobs.profile"
+        },
+        {
+            "file": "lib/routers/jobs/profile.js",
+            "line": 33,
+            "description": "Get specific Job Profile",
+            "itemtype": "method",
+            "name": "getSpecific",
+            "params": [
+                {
+                    "name": "key",
+                    "description": "Profile key",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Profile",
+            "module": "routes.jobs.profile"
+        },
+        {
+            "file": "lib/routers/jobs/search.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "09/24/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Search",
+            "module": "routes.jobs.profile"
+        },
+        {
+            "file": "lib/routers/jobs/search.js",
+            "line": 15,
+            "itemtype": "property",
+            "name": "entryPoint",
+            "type": "String",
+            "default": "api",
+            "static": 1,
+            "final": 1,
+            "class": "Search",
+            "module": "routes.jobs.search"
+        },
+        {
+            "file": "lib/routers/jobs/search.js",
+            "line": 33,
+            "description": "Search Jobs",
+            "itemtype": "method",
+            "name": "find",
+            "params": [
+                {
+                    "name": "params",
+                    "description": "Parameters, i.e. search criteria",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Search",
+            "module": "routes.jobs.search"
+        },
+        {
+            "file": "lib/routers/organization/companies.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "09/24/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Companies",
+            "module": "routes.jobs.search"
+        },
+        {
+            "file": "lib/routers/organization/companies.js",
+            "line": 15,
+            "itemtype": "property",
+            "name": "entryPoint",
+            "type": "String",
+            "default": "api",
+            "static": 1,
+            "final": 1,
+            "class": "Companies",
+            "module": "routes.organization.companies"
+        },
+        {
+            "file": "lib/routers/organization/companies.js",
+            "line": 33,
+            "description": "Get Companies Info",
+            "itemtype": "method",
+            "name": "getList",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Companies",
+            "module": "routes.organization.companies"
+        },
+        {
+            "file": "lib/routers/organization/companies.js",
+            "line": 45,
+            "description": "Get Specific Company",
+            "itemtype": "method",
+            "name": "getSpecific",
+            "params": [
+                {
+                    "name": "cmpReference",
+                    "description": "Company reference",
+                    "type": "Integer"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Companies",
+            "module": "routes.organization.companies"
+        },
+        {
+            "file": "lib/routers/organization/companies.js",
+            "line": 58,
+            "description": "Get Teams in Company",
+            "itemtype": "method",
+            "name": "getTeams",
+            "params": [
+                {
+                    "name": "cmpReference",
+                    "description": "Company reference",
+                    "type": "Integer"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Companies",
+            "module": "routes.organization.companies"
+        },
+        {
+            "file": "lib/routers/organization/companies.js",
+            "line": 71,
+            "description": "Get Users in Company",
+            "itemtype": "method",
+            "name": "getUsers",
+            "params": [
+                {
+                    "name": "cmpReference",
+                    "description": "Company reference",
+                    "type": "Integer"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Companies",
+            "module": "routes.organization.companies"
+        },
+        {
+            "file": "lib/routers/organization/teams.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "09/24/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Teams",
+            "module": "routes.organization.companies"
+        },
+        {
+            "file": "lib/routers/organization/teams.js",
+            "line": 15,
+            "itemtype": "property",
+            "name": "entryPoint",
+            "type": "String",
+            "default": "api",
+            "static": 1,
+            "final": 1,
+            "class": "Teams",
+            "module": "routes.organization.teams"
+        },
+        {
+            "file": "lib/routers/organization/teams.js",
+            "line": 33,
+            "description": "Get Teams Info",
+            "itemtype": "method",
+            "name": "getList",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Teams",
+            "module": "routes.organization.teams"
+        },
+        {
+            "file": "lib/routers/organization/teams.js",
+            "line": 45,
+            "description": "Get Users in Team",
+            "itemtype": "method",
+            "name": "getUsersInTeam",
+            "params": [
+                {
+                    "name": "teamReference",
+                    "description": "Team reference",
+                    "type": "Integer"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Teams",
+            "module": "routes.organization.teams"
+        },
+        {
+            "file": "lib/routers/organization/users.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "09/24/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Users",
+            "module": "routes.organization.teams"
+        },
+        {
+            "file": "lib/routers/organization/users.js",
+            "line": 15,
+            "itemtype": "property",
+            "name": "entryPoint",
+            "type": "String",
+            "default": "api",
+            "static": 1,
+            "final": 1,
+            "class": "Users",
+            "module": "routes.organization.users"
+        },
+        {
+            "file": "lib/routers/organization/users.js",
+            "line": 33,
+            "description": "Get authenticated user info",
+            "itemtype": "method",
+            "name": "getMyInfo",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Users",
+            "module": "routes.organization.users"
+        },
+        {
+            "file": "lib/routers/organization/users.js",
+            "line": 45,
+            "description": "Get referenced user info",
+            "itemtype": "method",
+            "name": "getSpecific",
+            "params": [
+                {
+                    "name": "userReference",
+                    "description": "User reference ID",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Users",
+            "module": "routes.organization.users"
+        },
+        {
+            "file": "lib/routers/reports/finance/accounts.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "09/26/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Accounts",
+            "module": "routes.organization.users"
+        },
+        {
+            "file": "lib/routers/reports/finance/accounts.js",
+            "line": 15,
+            "itemtype": "property",
+            "name": "entryPoint",
+            "type": "String",
+            "default": "gds",
+            "static": 1,
+            "final": 1,
+            "class": "Accounts",
+            "module": "routes.reports.finance.accounts"
+        },
+        {
+            "file": "lib/routers/reports/finance/accounts.js",
+            "line": 34,
+            "description": "Generate Financial Reports for an owned Account",
+            "itemtype": "method",
+            "name": "getOwned",
+            "params": [
+                {
+                    "name": "freelancerReference",
+                    "description": "Freelancer reference",
+                    "type": "Integer"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Accounts",
+            "module": "routes.reports.finance.accounts"
+        },
+        {
+            "file": "lib/routers/reports/finance/accounts.js",
+            "line": 48,
+            "description": "Generate Financial Reports for a Specific Account",
+            "itemtype": "method",
+            "name": "getSpecific",
+            "params": [
+                {
+                    "name": "entityReference",
+                    "description": "Entity reference",
+                    "type": "Integer"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Accounts",
+            "module": "routes.reports.finance.accounts"
+        },
+        {
+            "file": "lib/routers/reports/finance/billings.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "09/26/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Billings",
+            "module": "routes.reports.finance.accounts"
+        },
+        {
+            "file": "lib/routers/reports/finance/billings.js",
+            "line": 15,
+            "itemtype": "property",
+            "name": "entryPoint",
+            "type": "String",
+            "default": "gds",
+            "static": 1,
+            "final": 1,
+            "class": "Billings",
+            "module": "routes.reports.finance.billings"
+        },
+        {
+            "file": "lib/routers/reports/finance/billings.js",
+            "line": 34,
+            "description": "Generate Billing Reports for a Specific Freelancer",
+            "itemtype": "method",
+            "name": "getByFreelancer",
+            "params": [
+                {
+                    "name": "freelancerReference",
+                    "description": "Freelancer reference",
+                    "type": "Integer"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Billings",
+            "module": "routes.reports.finance.billings"
+        },
+        {
+            "file": "lib/routers/reports/finance/billings.js",
+            "line": 48,
+            "description": "Generate Billing Reports for a Specific Freelancer's Team",
+            "itemtype": "method",
+            "name": "getByFreelancersTeam",
+            "params": [
+                {
+                    "name": "freelancerTeamReference",
+                    "description": "Freelancer team reference",
+                    "type": "Integer"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Billings",
+            "module": "routes.reports.finance.billings"
+        },
+        {
+            "file": "lib/routers/reports/finance/billings.js",
+            "line": 62,
+            "description": "Generate Billing Reports for a Specific Freelancer's Company",
+            "itemtype": "method",
+            "name": "getByFreelancersCompany",
+            "params": [
+                {
+                    "name": "freelancerCompanyReference",
+                    "description": "Freelancer company reference",
+                    "type": "Integer"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Billings",
+            "module": "routes.reports.finance.billings"
+        },
+        {
+            "file": "lib/routers/reports/finance/billings.js",
+            "line": 76,
+            "description": "Generate Billing Reports for a Specific Buyer's Team",
+            "itemtype": "method",
+            "name": "getByBuyersTeam",
+            "params": [
+                {
+                    "name": "buyerTeamReference",
+                    "description": "Buyer team reference",
+                    "type": "Integer"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Billings",
+            "module": "routes.reports.finance.billings"
+        },
+        {
+            "file": "lib/routers/reports/finance/billings.js",
+            "line": 90,
+            "description": "Generate Billing Reports for a Specific Buyer's Company",
+            "itemtype": "method",
+            "name": "getByBuyersCompany",
+            "params": [
+                {
+                    "name": "buyerCompanyReference",
+                    "description": "Buyer company reference",
+                    "type": "Integer"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Billings",
+            "module": "routes.reports.finance.billings"
+        },
+        {
+            "file": "lib/routers/reports/finance/earnings.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "09/26/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Earnings",
+            "module": "routes.reports.finance.billings"
+        },
+        {
+            "file": "lib/routers/reports/finance/earnings.js",
+            "line": 15,
+            "itemtype": "property",
+            "name": "entryPoint",
+            "type": "String",
+            "default": "gds",
+            "static": 1,
+            "final": 1,
+            "class": "Earnings",
+            "module": "routes.reports.finance.earnings"
+        },
+        {
+            "file": "lib/routers/reports/finance/earnings.js",
+            "line": 34,
+            "description": "Generate Earning Reports for a Specific Freelancer",
+            "itemtype": "method",
+            "name": "getByFreelancer",
+            "params": [
+                {
+                    "name": "freelancerReference",
+                    "description": "Freelancer reference",
+                    "type": "Integer"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Earnings",
+            "module": "routes.reports.finance.earnings"
+        },
+        {
+            "file": "lib/routers/reports/finance/earnings.js",
+            "line": 48,
+            "description": "Generate Earning Reports for a Specific Freelancer's Team",
+            "itemtype": "method",
+            "name": "getByFreelancersTeam",
+            "params": [
+                {
+                    "name": "freelancerTeamReference",
+                    "description": "Freelancer team reference",
+                    "type": "Integer"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Earnings",
+            "module": "routes.reports.finance.earnings"
+        },
+        {
+            "file": "lib/routers/reports/finance/earnings.js",
+            "line": 62,
+            "description": "Generate Earning Reports for a Specific Freelancer's Company",
+            "itemtype": "method",
+            "name": "getByFreelancersCompany",
+            "params": [
+                {
+                    "name": "freelancerCompanyReference",
+                    "description": "Freelancer company reference",
+                    "type": "Integer"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Earnings",
+            "module": "routes.reports.finance.earnings"
+        },
+        {
+            "file": "lib/routers/reports/finance/earnings.js",
+            "line": 76,
+            "description": "Generate Earning Reports for a Specific Buyer's Team",
+            "itemtype": "method",
+            "name": "getByBuyersTeam",
+            "params": [
+                {
+                    "name": "buyerTeamReference",
+                    "description": "Buyer team reference",
+                    "type": "Integer"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Earnings",
+            "module": "routes.reports.finance.earnings"
+        },
+        {
+            "file": "lib/routers/reports/finance/earnings.js",
+            "line": 90,
+            "description": "Generate Earning Reports for a Specific Buyer's Company",
+            "itemtype": "method",
+            "name": "getByBuyersCompany",
+            "params": [
+                {
+                    "name": "buyerCompanyReference",
+                    "description": "Buyer company reference",
+                    "type": "Integer"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Earnings",
+            "module": "routes.reports.finance.earnings"
+        },
+        {
+            "file": "lib/routers/reports/time.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "09/26/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Time",
+            "module": "routes.reports.finance.earnings"
+        },
+        {
+            "file": "lib/routers/reports/time.js",
+            "line": 15,
+            "itemtype": "property",
+            "name": "entryPoint",
+            "type": "String",
+            "default": "gds",
+            "static": 1,
+            "final": 1,
+            "class": "Time",
+            "module": "routes.reports.time"
+        },
+        {
+            "file": "lib/routers/reports/time.js",
+            "line": 34,
+            "description": "Get by type",
+            "itemtype": "method",
+            "name": "_getUrlByType",
+            "params": [
+                {
+                    "name": "company",
+                    "description": "Company ID",
+                    "type": "String"
+                },
+                {
+                    "name": "team",
+                    "description": "Team ID",
+                    "type": "String"
+                },
+                {
+                    "name": "agency",
+                    "description": "Agency",
+                    "type": "String"
+                },
+                {
+                    "name": "hideFinDetails",
+                    "description": "Hides all financial details",
+                    "type": "Boolean"
+                }
+            ],
+            "return": {
+                "description": "Relative api URL"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "Time",
+            "module": "routes.reports.time"
+        },
+        {
+            "file": "lib/routers/reports/time.js",
+            "line": 60,
+            "description": "Generate Time Reports for a Specific Team (with financial info)",
+            "itemtype": "method",
+            "name": "getByTeamFull",
+            "params": [
+                {
+                    "name": "company",
+                    "description": "Company ID",
+                    "type": "String"
+                },
+                {
+                    "name": "team",
+                    "description": "Team ID",
+                    "type": "String"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Time",
+            "module": "routes.reports.time"
+        },
+        {
+            "file": "lib/routers/reports/time.js",
+            "line": 75,
+            "description": "Generate Time Reports for a Specific Team (hide financial info)",
+            "itemtype": "method",
+            "name": "getByTeamLimited",
+            "params": [
+                {
+                    "name": "company",
+                    "description": "Company ID",
+                    "type": "String"
+                },
+                {
+                    "name": "team",
+                    "description": "Team ID",
+                    "type": "String"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Time",
+            "module": "routes.reports.time"
+        },
+        {
+            "file": "lib/routers/reports/time.js",
+            "line": 90,
+            "description": "Generating Agency Specific Reports",
+            "itemtype": "method",
+            "name": "getByAgency",
+            "params": [
+                {
+                    "name": "company",
+                    "description": "Company ID",
+                    "type": "String"
+                },
+                {
+                    "name": "agency",
+                    "description": "Agency ID",
+                    "type": "String"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Time",
+            "module": "routes.reports.time"
+        },
+        {
+            "file": "lib/routers/reports/time.js",
+            "line": 105,
+            "description": "Generating Company Wide Reports",
+            "itemtype": "method",
+            "name": "getByCompany",
+            "params": [
+                {
+                    "name": "company",
+                    "description": "Company ID",
+                    "type": "String"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Time",
+            "module": "routes.reports.time"
+        },
+        {
+            "file": "lib/routers/reports/time.js",
+            "line": 119,
+            "description": "Generating Freelancer Specific Reports (hide financial info)",
+            "itemtype": "method",
+            "name": "getByFreelancerLimited",
+            "params": [
+                {
+                    "name": "freelancerId",
+                    "description": "Freelancer ID",
+                    "type": "String"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Time",
+            "module": "routes.reports.time"
+        },
+        {
+            "file": "lib/routers/reports/time.js",
+            "line": 133,
+            "description": "Generating Freelancer Specific Reports (with financial info)",
+            "itemtype": "method",
+            "name": "getByFreelancerFull",
+            "params": [
+                {
+                    "name": "freelancerId",
+                    "description": "Freelancer ID",
+                    "type": "String"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Time",
+            "module": "routes.reports.time"
+        },
+        {
+            "file": "lib/routers/auth.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "09/22/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Auth",
+            "module": "routes.reports.time"
+        },
+        {
+            "file": "lib/routers/auth.js",
+            "line": 15,
+            "itemtype": "property",
+            "name": "entryPoint",
+            "type": "String",
+            "default": "api",
+            "static": 1,
+            "final": 1,
+            "class": "Auth",
+            "module": "routes.auth"
+        },
+        {
+            "file": "lib/routers/auth.js",
+            "line": 33,
+            "description": "My Info",
+            "itemtype": "method",
+            "name": "getUserInfo",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Auth",
+            "module": "routes.auth"
+        },
+        {
+            "file": "lib/routers/mc.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "09/23/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Mc",
+            "module": "routes.auth"
+        },
+        {
+            "file": "lib/routers/mc.js",
+            "line": 15,
+            "itemtype": "property",
+            "name": "entryPoint",
+            "type": "String",
+            "default": "api",
+            "static": 1,
+            "final": 1,
+            "class": "Mc",
+            "module": "routes.mc"
+        },
+        {
+            "file": "lib/routers/mc.js",
+            "line": 35,
+            "description": "Get trays",
+            "itemtype": "method",
+            "name": "getTrays",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Mc",
+            "module": "routes.mc"
+        },
+        {
+            "file": "lib/routers/mc.js",
+            "line": 47,
+            "description": "Get tray by type",
+            "itemtype": "method",
+            "name": "getTrayByType",
+            "params": [
+                {
+                    "name": "username",
+                    "description": "Username",
+                    "type": "String"
+                },
+                {
+                    "name": "type",
+                    "description": "Tray type/name",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Mc",
+            "module": "routes.mc"
+        },
+        {
+            "file": "lib/routers/mc.js",
+            "line": 61,
+            "description": "Get thread details",
+            "itemtype": "method",
+            "name": "getThreadDetails",
+            "params": [
+                {
+                    "name": "username",
+                    "description": "Username",
+                    "type": "String"
+                },
+                {
+                    "name": "threadId",
+                    "description": "Thread ID",
+                    "type": "Integer"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Mc",
+            "module": "routes.mc"
+        },
+        {
+            "file": "lib/routers/mc.js",
+            "line": 75,
+            "description": "Get a specific thread by context",
+            "itemtype": "method",
+            "name": "getThreadByContext",
+            "params": [
+                {
+                    "name": "username",
+                    "description": "Username",
+                    "type": "String"
+                },
+                {
+                    "name": "jobKey",
+                    "description": "Job key",
+                    "type": "String"
+                },
+                {
+                    "name": "applicationId",
+                    "description": "Application ID",
+                    "type": "Integer"
+                },
+                {
+                    "name": "context",
+                    "description": "Context",
+                    "type": "String",
+                    "optional": true,
+                    "optdefault": "'Interviews'"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Mc",
+            "module": "routes.mc"
+        },
+        {
+            "file": "lib/routers/mc.js",
+            "line": 92,
+            "description": "Get a specific thread by context (last message content)",
+            "itemtype": "method",
+            "name": "getThreadByContextLastPosts",
+            "params": [
+                {
+                    "name": "username",
+                    "description": "Username",
+                    "type": "String"
+                },
+                {
+                    "name": "jobKey",
+                    "description": "Job key",
+                    "type": "String"
+                },
+                {
+                    "name": "applicationId",
+                    "description": "Application ID",
+                    "type": "Integer"
+                },
+                {
+                    "name": "context",
+                    "description": "Context",
+                    "type": "String",
+                    "optional": true,
+                    "optdefault": "'Interviews'"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Mc",
+            "module": "routes.mc"
+        },
+        {
+            "file": "lib/routers/mc.js",
+            "line": 109,
+            "description": "Update thread based on user actions",
+            "itemtype": "method",
+            "name": "markThread",
+            "params": [
+                {
+                    "name": "username",
+                    "description": "Username",
+                    "type": "String"
+                },
+                {
+                    "name": "threadId",
+                    "description": "Thread ID",
+                    "type": "Integer"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Mc",
+            "module": "routes.mc"
+        },
+        {
+            "file": "lib/routers/mc.js",
+            "line": 124,
+            "description": "Send new message",
+            "itemtype": "method",
+            "name": "startNewThread",
+            "params": [
+                {
+                    "name": "username",
+                    "description": "Username",
+                    "type": "String"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Mc",
+            "module": "routes.mc"
+        },
+        {
+            "file": "lib/routers/mc.js",
+            "line": 138,
+            "description": "Reply to existend thread",
+            "itemtype": "method",
+            "name": "replyToThread",
+            "params": [
+                {
+                    "name": "username",
+                    "description": "Username",
+                    "type": "String"
+                },
+                {
+                    "name": "threadId",
+                    "description": "Thread ID",
+                    "type": "Integer"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Mc",
+            "module": "routes.mc"
+        },
+        {
+            "file": "lib/routers/metadata.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "09/23/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Metadata",
+            "module": "routes.mc"
+        },
+        {
+            "file": "lib/routers/metadata.js",
+            "line": 15,
+            "itemtype": "property",
+            "name": "entryPoint",
+            "type": "String",
+            "default": "api",
+            "static": 1,
+            "final": 1,
+            "class": "Metadata",
+            "module": "routes.metadata"
+        },
+        {
+            "file": "lib/routers/metadata.js",
+            "line": 33,
+            "description": "Get Categories (v2)",
+            "itemtype": "method",
+            "name": "getCategoriesV2",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Metadata",
+            "module": "routes.metadata"
+        },
+        {
+            "file": "lib/routers/metadata.js",
+            "line": 45,
+            "description": "Get Categories",
+            "itemtype": "method",
+            "name": "getCategories",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Metadata",
+            "module": "routes.metadata"
+        },
+        {
+            "file": "lib/routers/metadata.js",
+            "line": 57,
+            "description": "Get Skills",
+            "itemtype": "method",
+            "name": "getSkills",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Metadata",
+            "module": "routes.metadata"
+        },
+        {
+            "file": "lib/routers/metadata.js",
+            "line": 69,
+            "description": "Get Regions",
+            "itemtype": "method",
+            "name": "getRegions",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Metadata",
+            "module": "routes.metadata"
+        },
+        {
+            "file": "lib/routers/metadata.js",
+            "line": 81,
+            "description": "Get Tests",
+            "itemtype": "method",
+            "name": "getTests",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Metadata",
+            "module": "routes.metadata"
+        },
+        {
+            "file": "lib/routers/metadata.js",
+            "line": 93,
+            "description": "Get Reasons",
+            "itemtype": "method",
+            "name": "getReasons",
+            "params": [
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Metadata",
+            "module": "routes.metadata"
+        },
+        {
+            "file": "lib/routers/payments.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "09/23/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Payments",
+            "module": "routes.metadata"
+        },
+        {
+            "file": "lib/routers/payments.js",
+            "line": 15,
+            "itemtype": "property",
+            "name": "entryPoint",
+            "type": "String",
+            "default": "api",
+            "static": 1,
+            "final": 1,
+            "class": "Payments",
+            "module": "routes.payments"
+        },
+        {
+            "file": "lib/routers/payments.js",
+            "line": 35,
+            "description": "Submit a Custom Bonus",
+            "itemtype": "method",
+            "name": "submitBonus",
+            "params": [
+                {
+                    "name": "teamReference",
+                    "description": "Team reference",
+                    "type": "Integer"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Payments",
+            "module": "routes.payments"
+        },
+        {
+            "file": "lib/routers/snapshot.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "09/23/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Snapshot",
+            "module": "routes.payments"
+        },
+        {
+            "file": "lib/routers/snapshot.js",
+            "line": 15,
+            "itemtype": "property",
+            "name": "entryPoint",
+            "type": "String",
+            "default": "api",
+            "static": 1,
+            "final": 1,
+            "class": "Snapshot",
+            "module": "routes.snapshot"
+        },
+        {
+            "file": "lib/routers/snapshot.js",
+            "line": 35,
+            "description": "Get snaphot info",
+            "itemtype": "method",
+            "name": "get",
+            "params": [
+                {
+                    "name": "company",
+                    "description": "Company",
+                    "type": "String"
+                },
+                {
+                    "name": "username",
+                    "description": "Username",
+                    "type": "String"
+                },
+                {
+                    "name": "ts",
+                    "description": "Timestamp",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Snapshot",
+            "module": "routes.snapshot"
+        },
+        {
+            "file": "lib/routers/snapshot.js",
+            "line": 50,
+            "description": "Update snapshot",
+            "itemtype": "method",
+            "name": "update",
+            "params": [
+                {
+                    "name": "company",
+                    "description": "Company",
+                    "type": "String"
+                },
+                {
+                    "name": "username",
+                    "description": "Username",
+                    "type": "String"
+                },
+                {
+                    "name": "ts",
+                    "description": "Timestamp",
+                    "type": "String"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Snapshot",
+            "module": "routes.snapshot"
+        },
+        {
+            "file": "lib/routers/snapshot.js",
+            "line": 66,
+            "description": "Delete snaphot",
+            "itemtype": "method",
+            "name": "delete",
+            "params": [
+                {
+                    "name": "company",
+                    "description": "Company",
+                    "type": "String"
+                },
+                {
+                    "name": "username",
+                    "description": "Username",
+                    "type": "String"
+                },
+                {
+                    "name": "ts",
+                    "description": "Timestamp",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Snapshot",
+            "module": "routes.snapshot"
+        },
+        {
+            "file": "lib/routers/snapshot.js",
+            "line": 81,
+            "description": "Get snaphot info by specific contract",
+            "itemtype": "method",
+            "name": "get",
+            "params": [
+                {
+                    "name": "contract",
+                    "description": "Contract ID",
+                    "type": "Integer"
+                },
+                {
+                    "name": "ts",
+                    "description": "Timestamp",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Snapshot",
+            "module": "routes.snapshot"
+        },
+        {
+            "file": "lib/routers/snapshot.js",
+            "line": 95,
+            "description": "Update snapshot by specific contract",
+            "itemtype": "method",
+            "name": "update",
+            "params": [
+                {
+                    "name": "contract",
+                    "description": "Contract ID",
+                    "type": "Integer"
+                },
+                {
+                    "name": "ts",
+                    "description": "Timestamp",
+                    "type": "String"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Snapshot",
+            "module": "routes.snapshot"
+        },
+        {
+            "file": "lib/routers/snapshot.js",
+            "line": 110,
+            "description": "Delete snaphot by specific contract",
+            "itemtype": "method",
+            "name": "delete",
+            "params": [
+                {
+                    "name": "contract",
+                    "description": "Contract ID",
+                    "type": "Integer"
+                },
+                {
+                    "name": "ts",
+                    "description": "Timestamp",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Snapshot",
+            "module": "routes.snapshot"
+        },
+        {
+            "file": "lib/routers/teams.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "09/23/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Teams",
+            "module": "routes.snapshot"
+        },
+        {
+            "file": "lib/routers/teams.js",
+            "line": 15,
+            "itemtype": "property",
+            "name": "entryPoint",
+            "type": "String",
+            "default": "api",
+            "static": 1,
+            "final": 1,
+            "class": "Teams",
+            "module": "routes.teams"
+        },
+        {
+            "file": "lib/routers/teams.js",
+            "line": 33,
+            "description": "Get Teamrooms",
+            "itemtype": "method",
+            "name": "getList",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Teams",
+            "module": "routes.teams"
+        },
+        {
+            "file": "lib/routers/teams.js",
+            "line": 45,
+            "description": "Get specific team or company",
+            "itemtype": "method",
+            "name": "getSpecific",
+            "params": [
+                {
+                    "name": "team",
+                    "description": "Teamroom or company ID",
+                    "type": "String"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Teams",
+            "module": "routes.teams"
+        },
+        {
+            "file": "lib/routers/workdiary.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "09/23/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Workdiary",
+            "module": "routes.teams"
+        },
+        {
+            "file": "lib/routers/workdiary.js",
+            "line": 15,
+            "itemtype": "property",
+            "name": "entryPoint",
+            "type": "String",
+            "default": "api",
+            "static": 1,
+            "final": 1,
+            "class": "Workdiary",
+            "module": "routes.workdiary"
+        },
+        {
+            "file": "lib/routers/workdiary.js",
+            "line": 33,
+            "description": "Get Workdiary",
+            "itemtype": "method",
+            "name": "get",
+            "params": [
+                {
+                    "name": "company",
+                    "description": "Company",
+                    "type": "String"
+                },
+                {
+                    "name": "username",
+                    "description": "Username",
+                    "type": "String"
+                },
+                {
+                    "name": "date",
+                    "description": "Date",
+                    "type": "String"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Workdiary",
+            "module": "routes.workdiary"
+        },
+        {
+            "file": "lib/routers/workdiary.js",
+            "line": 49,
+            "description": "Get Work Diary by Contract",
+            "itemtype": "method",
+            "name": "getByContract",
+            "params": [
+                {
+                    "name": "contract",
+                    "description": "Contract ID",
+                    "type": "String"
+                },
+                {
+                    "name": "date",
+                    "description": "Date",
+                    "type": "String"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Workdiary",
+            "module": "routes.workdiary"
+        },
+        {
+            "file": "lib/api.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "09/22/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "UpworkApi",
+            "module": "routes.workdiary"
+        },
+        {
+            "file": "lib/api.js",
+            "line": 25,
+            "itemtype": "property",
+            "name": "dataFormat",
+            "type": "String",
+            "default": "json",
+            "final": 1,
+            "class": "UpworkApi",
+            "module": "api"
+        },
+        {
+            "file": "lib/api.js",
+            "line": 47,
+            "description": "Get Authorization Url and request token",
+            "itemtype": "method",
+            "name": "getAuthorizationUrl",
+            "params": [
+                {
+                    "name": "callbackUrl",
+                    "description": "Callback URL",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": ""
+                }
+            ],
+            "async": 1,
+            "class": "UpworkApi",
+            "module": "api"
+        },
+        {
+            "file": "lib/api.js",
+            "line": 60,
+            "description": "Get access token key/secret pair",
+            "itemtype": "method",
+            "name": "getAccessToken",
+            "params": [
+                {
+                    "name": "requestToken",
+                    "description": "Request token",
+                    "type": "String"
+                },
+                {
+                    "name": "requestTokenSecret",
+                    "description": "Request token secret",
+                    "type": "String"
+                },
+                {
+                    "name": "verifier",
+                    "description": "Verifier got on authorization step",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": ""
+                }
+            ],
+            "async": 1,
+            "class": "UpworkApi",
+            "module": "api"
+        },
+        {
+            "file": "lib/api.js",
+            "line": 75,
+            "description": "Set known access token key/secret pair",
+            "itemtype": "method",
+            "name": "setAccessToken",
+            "params": [
+                {
+                    "name": "token",
+                    "description": "Access token",
+                    "type": "String"
+                },
+                {
+                    "name": "secret",
+                    "description": "Access token secret",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": ""
+                }
+            ],
+            "async": 1,
+            "class": "UpworkApi",
+            "module": "api"
+        },
+        {
+            "file": "lib/client.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "09/22/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Client",
+            "module": "api"
+        },
+        {
+            "file": "lib/client.js",
+            "line": 45,
+            "description": "Set access token key/secret pair",
+            "itemtype": "method",
+            "name": "setAccessToken",
+            "params": [
+                {
+                    "name": "token",
+                    "description": "Access token",
+                    "type": "String"
+                },
+                {
+                    "name": "secret",
+                    "description": "Access token secret",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Client",
+            "module": "client"
+        },
+        {
+            "file": "lib/client.js",
+            "line": 65,
+            "description": "Get authorization URL and request token",
+            "itemtype": "method",
+            "name": "getAuthorizationUrl",
+            "params": [
+                {
+                    "name": "callbackUrl",
+                    "description": "Callback URL",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": ""
+                }
+            ],
+            "async": 1,
+            "class": "Client",
+            "module": "client"
+        },
+        {
+            "file": "lib/client.js",
+            "line": 77,
+            "description": "Get access token key/secret pair",
+            "itemtype": "method",
+            "name": "getAccessToken",
+            "params": [
+                {
+                    "name": "requestToken",
+                    "description": "Request token",
+                    "type": "String"
+                },
+                {
+                    "name": "requestTokenSecret",
+                    "description": "Request token secret",
+                    "type": "String"
+                },
+                {
+                    "name": "verifier",
+                    "description": "Verifier got on authorization step",
+                    "type": "String"
+                },
+                {
+                    "name": "callback",
+                    "description": ""
+                }
+            ],
+            "async": 1,
+            "class": "Client",
+            "module": "client"
+        },
+        {
+            "file": "lib/client.js",
+            "line": 91,
+            "description": "Specify entry point used in base url",
+            "itemtype": "method",
+            "name": "setEntryPoint",
+            "params": [
+                {
+                    "name": "entryPoint",
+                    "description": "Entry point, e.g. 'api' or 'gds'",
+                    "type": "String"
+                }
+            ],
+            "class": "Client",
+            "module": "client"
+        },
+        {
+            "file": "lib/config.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "09/22/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Config",
+            "module": "client"
+        },
+        {
+            "file": "lib/debug.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "09/22/2014",
+            "copyright": "Copyright 2014(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Debug",
+            "module": "config"
+        },
+        {
+            "file": "lib/debug.js",
+            "line": 15,
+            "itemtype": "property",
+            "name": "mode",
+            "type": "Boolean",
+            "default": "false",
+            "class": "Debug",
+            "module": "debug"
+        },
+        {
+            "file": "lib/debug.js",
+            "line": 29,
+            "itemtype": "method",
+            "name": "log",
+            "params": [
+                {
+                    "name": "data",
+                    "description": "Data to display",
+                    "type": "String"
+                },
+                {
+                    "name": "label",
+                    "description": "Label",
+                    "type": "String",
+                    "optional": true,
+                    "optdefault": "\"\""
+                }
+            ],
+            "class": "Debug",
+            "module": "debug"
+        }
+    ],
+    "warnings": [
+        {
+            "message": "unknown tag: package",
+            "line": " lib/routers/activities/engagement.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/routers/activities/engagement.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/routers/activities/engagement.js:1"
+        },
+        {
+            "message": "unknown tag: package",
+            "line": " lib/routers/activities/team.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/routers/activities/team.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/routers/activities/team.js:1"
+        },
+        {
+            "message": "unknown tag: package",
+            "line": " lib/routers/freelancers/profile.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/routers/freelancers/profile.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/routers/freelancers/profile.js:1"
+        },
+        {
+            "message": "unknown tag: package",
+            "line": " lib/routers/freelancers/search.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/routers/freelancers/search.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/routers/freelancers/search.js:1"
+        },
+        {
+            "message": "unknown tag: package",
+            "line": " lib/routers/hr/clients/applications.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/routers/hr/clients/applications.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/routers/hr/clients/applications.js:1"
+        },
+        {
+            "message": "unknown tag: package",
+            "line": " lib/routers/hr/clients/offers.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/routers/hr/clients/offers.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/routers/hr/clients/offers.js:1"
+        },
+        {
+            "message": "unknown tag: package",
+            "line": " lib/routers/hr/freelancers/applications.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/routers/hr/freelancers/applications.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/routers/hr/freelancers/applications.js:1"
+        },
+        {
+            "message": "unknown tag: package",
+            "line": " lib/routers/hr/freelancers/offers.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/routers/hr/freelancers/offers.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/routers/hr/freelancers/offers.js:1"
+        },
+        {
+            "message": "unknown tag: package",
+            "line": " lib/routers/hr/contracts.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/routers/hr/contracts.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/routers/hr/contracts.js:1"
+        },
+        {
+            "message": "unknown tag: package",
+            "line": " lib/routers/hr/engagements.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/routers/hr/engagements.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/routers/hr/engagements.js:1"
+        },
+        {
+            "message": "unknown tag: package",
+            "line": " lib/routers/hr/interviews.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/routers/hr/interviews.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/routers/hr/interviews.js:1"
+        },
+        {
+            "message": "unknown tag: package",
+            "line": " lib/routers/hr/jobs.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/routers/hr/jobs.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/routers/hr/jobs.js:1"
+        },
+        {
+            "message": "unknown tag: package",
+            "line": " lib/routers/hr/milestones.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/routers/hr/milestones.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/routers/hr/milestones.js:1"
+        },
+        {
+            "message": "unknown tag: package",
+            "line": " lib/routers/hr/roles.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/routers/hr/roles.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/routers/hr/roles.js:1"
+        },
+        {
+            "message": "unknown tag: package",
+            "line": " lib/routers/hr/submissions.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/routers/hr/submissions.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/routers/hr/submissions.js:1"
+        },
+        {
+            "message": "unknown tag: package",
+            "line": " lib/routers/jobs/profile.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/routers/jobs/profile.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/routers/jobs/profile.js:1"
+        },
+        {
+            "message": "unknown tag: package",
+            "line": " lib/routers/jobs/search.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/routers/jobs/search.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/routers/jobs/search.js:1"
+        },
+        {
+            "message": "unknown tag: package",
+            "line": " lib/routers/organization/companies.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/routers/organization/companies.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/routers/organization/companies.js:1"
+        },
+        {
+            "message": "unknown tag: package",
+            "line": " lib/routers/organization/teams.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/routers/organization/teams.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/routers/organization/teams.js:1"
+        },
+        {
+            "message": "unknown tag: package",
+            "line": " lib/routers/organization/users.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/routers/organization/users.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/routers/organization/users.js:1"
+        },
+        {
+            "message": "unknown tag: package",
+            "line": " lib/routers/reports/finance/accounts.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/routers/reports/finance/accounts.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/routers/reports/finance/accounts.js:1"
+        },
+        {
+            "message": "unknown tag: package",
+            "line": " lib/routers/reports/finance/billings.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/routers/reports/finance/billings.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/routers/reports/finance/billings.js:1"
+        },
+        {
+            "message": "unknown tag: package",
+            "line": " lib/routers/reports/finance/earnings.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/routers/reports/finance/earnings.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/routers/reports/finance/earnings.js:1"
+        },
+        {
+            "message": "unknown tag: package",
+            "line": " lib/routers/reports/time.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/routers/reports/time.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/routers/reports/time.js:1"
+        },
+        {
+            "message": "unknown tag: package",
+            "line": " lib/routers/auth.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/routers/auth.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/routers/auth.js:1"
+        },
+        {
+            "message": "unknown tag: package",
+            "line": " lib/routers/mc.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/routers/mc.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/routers/mc.js:1"
+        },
+        {
+            "message": "unknown tag: package",
+            "line": " lib/routers/metadata.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/routers/metadata.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/routers/metadata.js:1"
+        },
+        {
+            "message": "unknown tag: package",
+            "line": " lib/routers/payments.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/routers/payments.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/routers/payments.js:1"
+        },
+        {
+            "message": "unknown tag: package",
+            "line": " lib/routers/snapshot.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/routers/snapshot.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/routers/snapshot.js:1"
+        },
+        {
+            "message": "unknown tag: package",
+            "line": " lib/routers/teams.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/routers/teams.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/routers/teams.js:1"
+        },
+        {
+            "message": "unknown tag: package",
+            "line": " lib/routers/workdiary.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/routers/workdiary.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/routers/workdiary.js:1"
+        },
+        {
+            "message": "unknown tag: package",
+            "line": " lib/api.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/api.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/api.js:1"
+        },
+        {
+            "message": "unknown tag: package",
+            "line": " lib/client.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/client.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/client.js:1"
+        },
+        {
+            "message": "unknown tag: package",
+            "line": " lib/config.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/config.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/config.js:1"
+        },
+        {
+            "message": "unknown tag: package",
+            "line": " lib/debug.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/debug.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/debug.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/routers/activities/engagement.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/routers/activities/team.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/routers/freelancers/profile.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/routers/freelancers/search.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/routers/hr/clients/applications.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/routers/hr/clients/offers.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/routers/hr/freelancers/applications.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/routers/hr/freelancers/offers.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/routers/hr/contracts.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/routers/hr/engagements.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/routers/hr/interviews.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/routers/hr/jobs.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/routers/hr/milestones.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/routers/hr/roles.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/routers/hr/submissions.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/routers/jobs/profile.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/routers/jobs/search.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/routers/organization/companies.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/routers/organization/teams.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/routers/organization/users.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/routers/reports/finance/accounts.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/routers/reports/finance/billings.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/routers/reports/finance/earnings.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/routers/reports/time.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/routers/auth.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/routers/mc.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/routers/metadata.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/routers/payments.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/routers/snapshot.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/routers/teams.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/routers/workdiary.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/api.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/client.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/config.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/debug.js:1"
+        }
+    ]
+}
