@@ -63,8 +63,8 @@ To install the library please run the following command::
 
 ## Quick start
 
-Before you may use Upwork APIs, you will need to obtain your pair of API keys.
-Visit the `Upwork API Center documentation <https://developers.upwork.com/#authentication_oauth-10>`_
+Before you start using Upwork API, you will need to obtain your pair of API keys.
+Visit the `Upwork API documentation Center <https://developers.upwork.com/#authentication_oauth-10>`_
 for full details.
 
 1. - `example/example.js` to `myapp.js`
@@ -74,4 +74,4 @@ for full details.
 
 ## Documentation
 
-Please use YUIDoc to build local copy of documentation or use http://upwork.github.io/node-upwork/
+Please use YUIDoc to build the local copy of the documentation or use http://upwork.github.io/node-upwork/
