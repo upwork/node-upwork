@@ -4480,7 +4480,7 @@
             "line": 33,
             "description": "Get Workdays",
             "itemtype": "method",
-            "name": "get",
+            "name": "getByCompany",
             "params": [
                 {
                     "name": "company",
