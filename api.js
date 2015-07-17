@@ -27,6 +27,7 @@ YUI.add("yuidoc-meta", function(Y) {
         "Time",
         "UpworkApi",
         "Users",
+        "Workdays",
         "Workdiary"
     ],
     "modules": [
@@ -64,6 +65,7 @@ YUI.add("yuidoc-meta", function(Y) {
         "routes.reports.time",
         "routes.snapshot",
         "routes.teams",
+        "routes.workdays",
         "routes.workdiary"
     ],
     "allModules": [
@@ -202,6 +204,10 @@ YUI.add("yuidoc-meta", function(Y) {
         {
             "displayName": "routes.teams",
             "name": "routes.teams"
+        },
+        {
+            "displayName": "routes.workdays",
+            "name": "routes.workdays"
         },
         {
             "displayName": "routes.workdiary",

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>routes.organization.companies - node-upwork</title>
+    <title>lib/routers/workdays.js - node-upwork</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
@@ -138,37 +138,75 @@
             <div class="apidocs">
                 <div id="docs-main">
                     <div class="content">
-<h1>routes.organization.companies Module</h1>
-<div class="box clearfix meta">
+<h1 class="file-heading">File: lib/routers/workdays.js</h1>
 
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+ * Upwork auth library for using with public API by OAuth
+ *
+ * @package     UpworkAPI
+ * @since       07/14/2015
+ * @copyright   Copyright 2015(c) Upwork.com
+ * @author      Maksym Novozhylov &lt;mnovozhilov@upwork.com&gt;
+ * @license     Upwork&#x27;s API Terms of Use {@link https://developers.upwork.com/api-tos.html}
+ */
 
-        <div class="foundat">
-            Defined in: <a href="../files/lib_routers_organization_companies.js.html#l24"><code>lib&#x2F;routers&#x2F;organization&#x2F;companies.js:24</code></a>
-        </div>
+/**
+ * @module routes.workdays
+ */
 
-</div>
+/**
+ * @property entryPoint
+ * @type String
+ * @default api
+ * @static
+ * @final
+ */
+var entryPoint = &#x27;api&#x27;;
 
+/**
+ * @class Workdays
+ * @constructor
+ */
+exports.Workdays = function(api) {
+  this.api = api;
+  this.api.epoint = entryPoint;
+}
 
-<div class="box intro">
-    
-</div>
+/**
+ * Get Workdays
+ *
+ * @method get
+ * @param company {String} Company
+ * @param fromDate {String} Start date
+ * @param tillDate {String} End date
+ * @param params {Hash} Parameters
+ * @param callback {String} Callback function
+ * @async
+ */
+exports.Workdays.prototype.getByCompany = function(company, fromDate, tillDate, params, callback) {
+  debug(&#x27;running request&#x27;);
+  this.api.client.get(&#x27;team/v2/workdays/companies/&#x27; + company + &#x27;/&#x27; + fromDate + &#x27;,&#x27; + tillDate, params, callback);
+}
 
+/**
+ * Get Work Diary by Contract
+ *
+ * @method getByContract
+ * @param contract {String} Contract ID
+ * @param fromDate {String} Start date
+ * @param tillDate {String} End date
+ * @param params {Hash} Parameters
+ * @param callback {String} Callback function
+ * @async
+ */
+exports.Workdays.prototype.getByContract = function(contract, fromDate, tillDate, params, callback) {
+  debug(&#x27;running request&#x27;);
+  this.api.client.get(&#x27;team/v2/workdays/contracts/&#x27; + company + &#x27;/&#x27; + fromDate + &#x27;,&#x27; + tillDate, params, callback);
+}
 
-<div class="yui3-g">
-    <div class="yui3-u-1-2">
-            <p>This module provides the following classes:</p>
-
-            <ul class="module-classes">
-                <li class="module-class">
-                    <a href="../classes/Companies.html">
-                        Companies
-                    </a>
-                </li>
-            </ul>
-    </div>
-
-    <div class="yui3-u-1-2">
-    </div>
+    </pre>
 </div>
                     </div>
                 </div>

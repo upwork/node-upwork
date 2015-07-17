@@ -2,7 +2,7 @@
     "project": {
         "name": "node-upwork",
         "description": "Node.JS bindings for Upwork API",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "url": "https://developers.upwork.com/",
         "logo": "https://developers.upwork.com/_static/img/logo-white.png"
     },
@@ -317,6 +317,17 @@
             },
             "classes": {
                 "Teams": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/routers/workdays.js": {
+            "name": "lib/routers/workdays.js",
+            "modules": {
+                "routes.workdays": 1
+            },
+            "classes": {
+                "Workdays": 1
             },
             "fors": {},
             "namespaces": {}
@@ -722,6 +733,18 @@
             "file": "lib/routers/teams.js",
             "line": 24
         },
+        "routes.workdays": {
+            "name": "routes.workdays",
+            "submodules": {},
+            "classes": {
+                "Workdays": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/routers/workdays.js",
+            "line": 24
+        },
         "routes.workdiary": {
             "name": "routes.workdiary",
             "submodules": {},
@@ -1101,6 +1124,20 @@
             "file": "lib/routers/snapshot.js",
             "line": 24,
             "description": "Snapshot Info",
+            "is_constructor": 1
+        },
+        "Workdays": {
+            "name": "Workdays",
+            "shortname": "Workdays",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "routes.workdays",
+            "namespace": "",
+            "file": "lib/routers/workdays.js",
+            "line": 24,
             "is_constructor": 1
         },
         "Workdiary": {
@@ -4415,6 +4452,104 @@
             "module": "routes.teams"
         },
         {
+            "file": "lib/routers/workdays.js",
+            "line": 1,
+            "description": "Upwork auth library for using with public API by OAuth",
+            "package": "UpworkAPI",
+            "since": "07/14/2015",
+            "copyright": "Copyright 2015(c) Upwork.com",
+            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
+            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
+            "class": "Workdays",
+            "module": "routes.teams"
+        },
+        {
+            "file": "lib/routers/workdays.js",
+            "line": 15,
+            "itemtype": "property",
+            "name": "entryPoint",
+            "type": "String",
+            "default": "api",
+            "static": 1,
+            "final": 1,
+            "class": "Workdays",
+            "module": "routes.workdays"
+        },
+        {
+            "file": "lib/routers/workdays.js",
+            "line": 33,
+            "description": "Get Workdays",
+            "itemtype": "method",
+            "name": "get",
+            "params": [
+                {
+                    "name": "company",
+                    "description": "Company",
+                    "type": "String"
+                },
+                {
+                    "name": "fromDate",
+                    "description": "Start date",
+                    "type": "String"
+                },
+                {
+                    "name": "tillDate",
+                    "description": "End date",
+                    "type": "String"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Workdays",
+            "module": "routes.workdays"
+        },
+        {
+            "file": "lib/routers/workdays.js",
+            "line": 49,
+            "description": "Get Work Diary by Contract",
+            "itemtype": "method",
+            "name": "getByContract",
+            "params": [
+                {
+                    "name": "contract",
+                    "description": "Contract ID",
+                    "type": "String"
+                },
+                {
+                    "name": "fromDate",
+                    "description": "Start date",
+                    "type": "String"
+                },
+                {
+                    "name": "tillDate",
+                    "description": "End date",
+                    "type": "String"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Workdays",
+            "module": "routes.workdays"
+        },
+        {
             "file": "lib/routers/workdiary.js",
             "line": 1,
             "description": "Upwork auth library for using with public API by OAuth",
@@ -4424,7 +4559,7 @@
             "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
             "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
             "class": "Workdiary",
-            "module": "routes.teams"
+            "module": "routes.workdays"
         },
         {
             "file": "lib/routers/workdiary.js",
@@ -5135,6 +5270,18 @@
         },
         {
             "message": "unknown tag: package",
+            "line": " lib/routers/workdays.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " lib/routers/workdays.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " lib/routers/workdays.js:1"
+        },
+        {
+            "message": "unknown tag: package",
             "line": " lib/routers/workdiary.js:1"
         },
         {
@@ -5312,6 +5459,10 @@
         {
             "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
             "line": " lib/routers/teams.js:1"
+        },
+        {
+            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
+            "line": " lib/routers/workdays.js:1"
         },
         {
             "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
