@@ -1,7 +1,7 @@
 {
     "name": "node-upwork",
     "description": "Node.JS bindings for Upwork API",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "url": "https://developers.upwork.com/",
     "logo": "https://developers.upwork.com/_static/img/logo-white.png",
     "options": {
