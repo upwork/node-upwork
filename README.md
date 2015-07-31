@@ -1,6 +1,8 @@
 Node.JS bindings for Upwork API
 ===========
 
+[![GitHub release](https://img.shields.io/github/release/upwork/node-upwork.svg)](https://github.com/upwork/node-upwork/releases)
+
 # Introduction
 This project provides a set of resources of Upwork API from http://developers.upwork.com
  based on OAuth 1.0a.
