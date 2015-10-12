@@ -271,7 +271,7 @@ exports.Time.prototype.getByCompany = function(company, params, callback) {
  */
 exports.Time.prototype.getByFreelancerLimited = function(freelancerId, params, callback) {
   debug(&#x27;running request&#x27;);
-  this.api.client.get(&#x27;timereports/v1/providers/&#x27; + freelancerId, params, callback);
+  this.api.client.get(&#x27;timereports/v1/providers/&#x27; + freelancerId + &#x27;/hours&#x27;, params, callback);
 }
 
 /**

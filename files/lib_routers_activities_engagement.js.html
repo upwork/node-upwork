@@ -203,6 +203,20 @@ exports.Engagement.prototype.assign = function(company, team, engagementRef, par
   this.api.client.put(&#x27;otask/v1/tasks/companies/&#x27; + company + &#x27;/teams/&#x27; + team + &#x27;/engagements/&#x27; + engagementRef + &#x27;/tasks&#x27;, params, callback);
 }
 
+/**
+ * Assign to specific engagement the list of activities
+ *
+ * @method assign
+ * @param engagementRef {Integer} Engagement reference
+ * @param params {Hash} Parameters
+ * @param callback {String} Callback function
+ * @async
+ */
+exports.Engagement.prototype.assignToEngagement = function(engagementRef, params, callback) {
+  debug(&#x27;running request&#x27;);
+  this.api.client.put(&#x27;tasks/v2/tasks/contracts/&#x27; + engagementRef, params, callback);
+}
+
     </pre>
 </div>
                     </div>

@@ -1294,6 +1294,33 @@
             "module": "routes.activities.engagement"
         },
         {
+            "file": "lib/routers/activities/engagement.js",
+            "line": 62,
+            "description": "Assign to specific engagement the list of activities",
+            "itemtype": "method",
+            "name": "assign",
+            "params": [
+                {
+                    "name": "engagementRef",
+                    "description": "Engagement reference",
+                    "type": "Integer"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Engagement",
+            "module": "routes.activities.engagement"
+        },
+        {
             "file": "lib/routers/activities/team.js",
             "line": 1,
             "description": "Upwork auth library for using with public API by OAuth",
@@ -4034,23 +4061,6 @@
         {
             "file": "lib/routers/metadata.js",
             "line": 45,
-            "description": "Get Categories",
-            "itemtype": "method",
-            "name": "getCategories",
-            "params": [
-                {
-                    "name": "callback",
-                    "description": "Callback function",
-                    "type": "String"
-                }
-            ],
-            "async": 1,
-            "class": "Metadata",
-            "module": "routes.metadata"
-        },
-        {
-            "file": "lib/routers/metadata.js",
-            "line": 57,
             "description": "Get Skills",
             "itemtype": "method",
             "name": "getSkills",
@@ -4067,7 +4077,7 @@
         },
         {
             "file": "lib/routers/metadata.js",
-            "line": 69,
+            "line": 57,
             "description": "Get Regions",
             "itemtype": "method",
             "name": "getRegions",
@@ -4084,7 +4094,7 @@
         },
         {
             "file": "lib/routers/metadata.js",
-            "line": 81,
+            "line": 69,
             "description": "Get Tests",
             "itemtype": "method",
             "name": "getTests",
@@ -4101,7 +4111,7 @@
         },
         {
             "file": "lib/routers/metadata.js",
-            "line": 93,
+            "line": 81,
             "description": "Get Reasons",
             "itemtype": "method",
             "name": "getReasons",
