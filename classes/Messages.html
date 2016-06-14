@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Mc - node-upwork</title>
+    <title>Messages - node-upwork</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
@@ -51,7 +51,7 @@
                                 <li><a href="../classes/Engagements.html">Engagements</a></li>
                                 <li><a href="../classes/Interviews.html">Interviews</a></li>
                                 <li><a href="../classes/Jobs.html">Jobs</a></li>
-                                <li><a href="../classes/Mc.html">Mc</a></li>
+                                <li><a href="../classes/Messages.html">Messages</a></li>
                                 <li><a href="../classes/Metadata.html">Metadata</a></li>
                                 <li><a href="../classes/Offers.html">Offers</a></li>
                                 <li><a href="../classes/Payments.html">Payments</a></li>
@@ -67,6 +67,7 @@
                                 <li><a href="../classes/Workdays.html">Workdays</a></li>
                                 <li><a href="../classes/Workdiary.html">Workdiary</a></li>
                             </ul>
+                
                 
                             <ul id="api-modules" class="apis modules">
                                 <li><a href="../modules/api.html">api</a></li>
@@ -91,7 +92,7 @@
                                 <li><a href="../modules/routes.hr.submissions.html">routes.hr.submissions</a></li>
                                 <li><a href="../modules/routes.jobs.profile.html">routes.jobs.profile</a></li>
                                 <li><a href="../modules/routes.jobs.search.html">routes.jobs.search</a></li>
-                                <li><a href="../modules/routes.mc.html">routes.mc</a></li>
+                                <li><a href="../modules/routes.messages.html">routes.messages</a></li>
                                 <li><a href="../modules/routes.metadata.html">routes.metadata</a></li>
                                 <li><a href="../modules/routes.organization.companies.html">routes.organization.companies</a></li>
                                 <li><a href="../modules/routes.organization.teams.html">routes.organization.teams</a></li>
@@ -138,28 +139,28 @@
             <div class="apidocs">
                 <div id="docs-main">
                     <div class="content">
-<h1>Mc Class</h1>
+<h1>Messages Class</h1>
 <div class="box meta">
 
 
         <div class="foundat">
-            Defined in: <a href="../files/lib_routers_mc.js.html#l24"><code>lib&#x2F;routers&#x2F;mc.js:24</code></a>
+            Defined in: <a href="../files/lib_routers_messages.js.html#l24"><code>lib&#x2F;routers&#x2F;messages.js:24</code></a>
         </div>
 
-            Module: <a href="../modules/routes.mc.html">routes.mc</a>
+            Module: <a href="../modules/routes.messages.html">routes.messages</a>
 
 </div>
 
 
 <div class="box intro">
-    <p>Message Center</p>
+    <p>Messages</p>
 
 </div>
 
     <div class="constructor">
         <h2>Constructor</h2>
-<div id="method_Mc" class="method item">
-    <h3 class="name"><code>Mc</code></h3>
+<div id="method_Messages" class="method item">
+    <h3 class="name"><code>Messages</code></h3>
 
         <span class="paren">()</span>
 
@@ -173,7 +174,7 @@
     <div class="meta">
                 <p>
                 Defined in
-        <a href="../files/lib_routers_mc.js.html#l24"><code>lib&#x2F;routers&#x2F;mc.js:24</code></a>
+        <a href="../files/lib_routers_messages.js.html#l24"><code>lib&#x2F;routers&#x2F;messages.js:24</code></a>
         </p>
 
 
@@ -207,35 +208,39 @@
 
                     <ul class="index-list methods">
                             <li class="index-item method">
-                                <a href="#method_getThreadByContext">getThreadByContext</a>
+                                <a href="#method_createRoom">createRoom</a>
 
                             </li>
                             <li class="index-item method">
-                                <a href="#method_getThreadByContextLastPosts">getThreadByContextLastPosts</a>
+                                <a href="#method_getRoomByApplication">getRoomByApplication</a>
 
                             </li>
                             <li class="index-item method">
-                                <a href="#method_getThreadDetails">getThreadDetails</a>
+                                <a href="#method_getRoomByContract">getRoomByContract</a>
 
                             </li>
                             <li class="index-item method">
-                                <a href="#method_getTrayByType">getTrayByType</a>
+                                <a href="#method_getRoomByOffer">getRoomByOffer</a>
 
                             </li>
                             <li class="index-item method">
-                                <a href="#method_getTrays">getTrays</a>
+                                <a href="#method_getRoomDetails">getRoomDetails</a>
 
                             </li>
                             <li class="index-item method">
-                                <a href="#method_markThread">markThread</a>
+                                <a href="#method_getRooms">getRooms</a>
 
                             </li>
                             <li class="index-item method">
-                                <a href="#method_replyToThread">replyToThread</a>
+                                <a href="#method_sendMessageToRoom">sendMessageToRoom</a>
 
                             </li>
                             <li class="index-item method">
-                                <a href="#method_startNewThread">startNewThread</a>
+                                <a href="#method_updateRoomMetadata">updateRoomMetadata</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_updateRoomSettings">updateRoomSettings</a>
 
                             </li>
                     </ul>
@@ -259,461 +264,13 @@
             <div id="methods" class="api-class-tabpanel">
                 <h2 class="off-left">Methods</h2>
 
-<div id="method_getThreadByContext" class="method item">
-    <h3 class="name"><code>getThreadByContext</code></h3>
+<div id="method_createRoom" class="method item">
+    <h3 class="name"><code>createRoom</code></h3>
 
         <div class="args">
             <span class="paren">(</span><ul class="args-list inline commas">
                 <li class="arg">
-                        <code>username</code>
-                </li>
-                <li class="arg">
-                        <code>jobKey</code>
-                </li>
-                <li class="arg">
-                        <code>applicationId</code>
-                </li>
-                <li class="arg">
-                        <code class="optional">[context=&#x27;Interviews&#x27;]</code>
-                </li>
-                <li class="arg">
-                        <code>callback</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-        <span class="flag async">async</span>
-
-    <div class="meta">
-                <p>
-                Defined in
-        <a href="../files/lib_routers_mc.js.html#l75"><code>lib&#x2F;routers&#x2F;mc.js:75</code></a>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Get a specific thread by context</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">username</code>
-                        <span class="type">String</span>
-
-
-                    <div class="param-description">
-                        <p>Username</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">jobKey</code>
-                        <span class="type">String</span>
-
-
-                    <div class="param-description">
-                        <p>Job key</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">applicationId</code>
-                        <span class="type">Integer</span>
-
-
-                    <div class="param-description">
-                        <p>Application ID</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name optional">[context=&#x27;Interviews&#x27;]</code>
-                        <span class="type">String</span>
-                        <span class="flag optional" title="This parameter is optional.">optional</span>
-
-
-                    <div class="param-description">
-                        <p>Context</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">callback</code>
-                        <span class="type">String</span>
-
-
-                    <div class="param-description">
-                        <p>Callback function</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
-</div>
-<div id="method_getThreadByContextLastPosts" class="method item">
-    <h3 class="name"><code>getThreadByContextLastPosts</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>username</code>
-                </li>
-                <li class="arg">
-                        <code>jobKey</code>
-                </li>
-                <li class="arg">
-                        <code>applicationId</code>
-                </li>
-                <li class="arg">
-                        <code class="optional">[context=&#x27;Interviews&#x27;]</code>
-                </li>
-                <li class="arg">
-                        <code>callback</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-        <span class="flag async">async</span>
-
-    <div class="meta">
-                <p>
-                Defined in
-        <a href="../files/lib_routers_mc.js.html#l92"><code>lib&#x2F;routers&#x2F;mc.js:92</code></a>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Get a specific thread by context (last message content)</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">username</code>
-                        <span class="type">String</span>
-
-
-                    <div class="param-description">
-                        <p>Username</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">jobKey</code>
-                        <span class="type">String</span>
-
-
-                    <div class="param-description">
-                        <p>Job key</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">applicationId</code>
-                        <span class="type">Integer</span>
-
-
-                    <div class="param-description">
-                        <p>Application ID</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name optional">[context=&#x27;Interviews&#x27;]</code>
-                        <span class="type">String</span>
-                        <span class="flag optional" title="This parameter is optional.">optional</span>
-
-
-                    <div class="param-description">
-                        <p>Context</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">callback</code>
-                        <span class="type">String</span>
-
-
-                    <div class="param-description">
-                        <p>Callback function</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
-</div>
-<div id="method_getThreadDetails" class="method item">
-    <h3 class="name"><code>getThreadDetails</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>username</code>
-                </li>
-                <li class="arg">
-                        <code>threadId</code>
-                </li>
-                <li class="arg">
-                        <code>callback</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-        <span class="flag async">async</span>
-
-    <div class="meta">
-                <p>
-                Defined in
-        <a href="../files/lib_routers_mc.js.html#l61"><code>lib&#x2F;routers&#x2F;mc.js:61</code></a>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Get thread details</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">username</code>
-                        <span class="type">String</span>
-
-
-                    <div class="param-description">
-                        <p>Username</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">threadId</code>
-                        <span class="type">Integer</span>
-
-
-                    <div class="param-description">
-                        <p>Thread ID</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">callback</code>
-                        <span class="type">String</span>
-
-
-                    <div class="param-description">
-                        <p>Callback function</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
-</div>
-<div id="method_getTrayByType" class="method item">
-    <h3 class="name"><code>getTrayByType</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>username</code>
-                </li>
-                <li class="arg">
-                        <code>type</code>
-                </li>
-                <li class="arg">
-                        <code>callback</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-        <span class="flag async">async</span>
-
-    <div class="meta">
-                <p>
-                Defined in
-        <a href="../files/lib_routers_mc.js.html#l47"><code>lib&#x2F;routers&#x2F;mc.js:47</code></a>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Get tray by type</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">username</code>
-                        <span class="type">String</span>
-
-
-                    <div class="param-description">
-                        <p>Username</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">type</code>
-                        <span class="type">String</span>
-
-
-                    <div class="param-description">
-                        <p>Tray type/name</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">callback</code>
-                        <span class="type">String</span>
-
-
-                    <div class="param-description">
-                        <p>Callback function</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
-</div>
-<div id="method_getTrays" class="method item">
-    <h3 class="name"><code>getTrays</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>callback</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-        <span class="flag async">async</span>
-
-    <div class="meta">
-                <p>
-                Defined in
-        <a href="../files/lib_routers_mc.js.html#l35"><code>lib&#x2F;routers&#x2F;mc.js:35</code></a>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Get trays</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">callback</code>
-                        <span class="type">String</span>
-
-
-                    <div class="param-description">
-                        <p>Callback function</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
-</div>
-<div id="method_markThread" class="method item">
-    <h3 class="name"><code>markThread</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>username</code>
-                </li>
-                <li class="arg">
-                        <code>threadId</code>
+                        <code>company</code>
                 </li>
                 <li class="arg">
                         <code>params</code>
@@ -735,7 +292,7 @@
     <div class="meta">
                 <p>
                 Defined in
-        <a href="../files/lib_routers_mc.js.html#l109"><code>lib&#x2F;routers&#x2F;mc.js:109</code></a>
+        <a href="../files/lib_routers_messages.js.html#l113"><code>lib&#x2F;routers&#x2F;messages.js:113</code></a>
         </p>
 
 
@@ -743,7 +300,7 @@
     </div>
 
     <div class="description">
-        <p>Update thread based on user actions</p>
+        <p>Create a new room</p>
 
     </div>
 
@@ -752,23 +309,12 @@
 
             <ul class="params-list">
                 <li class="param">
-                        <code class="param-name">username</code>
+                        <code class="param-name">company</code>
                         <span class="type">String</span>
 
 
                     <div class="param-description">
-                        <p>Username</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">threadId</code>
-                        <span class="type">Integer</span>
-
-
-                    <div class="param-description">
-                        <p>Thread ID</p>
+                        <p>Company ID</p>
 
                     </div>
 
@@ -801,16 +347,16 @@
 
 
 </div>
-<div id="method_replyToThread" class="method item">
-    <h3 class="name"><code>replyToThread</code></h3>
+<div id="method_getRoomByApplication" class="method item">
+    <h3 class="name"><code>getRoomByApplication</code></h3>
 
         <div class="args">
             <span class="paren">(</span><ul class="args-list inline commas">
                 <li class="arg">
-                        <code>username</code>
+                        <code>company</code>
                 </li>
                 <li class="arg">
-                        <code>threadId</code>
+                        <code>applicationId</code>
                 </li>
                 <li class="arg">
                         <code>params</code>
@@ -832,7 +378,7 @@
     <div class="meta">
                 <p>
                 Defined in
-        <a href="../files/lib_routers_mc.js.html#l138"><code>lib&#x2F;routers&#x2F;mc.js:138</code></a>
+        <a href="../files/lib_routers_messages.js.html#l81"><code>lib&#x2F;routers&#x2F;messages.js:81</code></a>
         </p>
 
 
@@ -840,7 +386,7 @@
     </div>
 
     <div class="description">
-        <p>Reply to existend thread</p>
+        <p>Get a specific room by application ID</p>
 
     </div>
 
@@ -849,23 +395,23 @@
 
             <ul class="params-list">
                 <li class="param">
-                        <code class="param-name">username</code>
+                        <code class="param-name">company</code>
                         <span class="type">String</span>
 
 
                     <div class="param-description">
-                        <p>Username</p>
+                        <p>Company ID</p>
 
                     </div>
 
                 </li>
                 <li class="param">
-                        <code class="param-name">threadId</code>
+                        <code class="param-name">applicationId</code>
                         <span class="type">Integer</span>
 
 
                     <div class="param-description">
-                        <p>Thread ID</p>
+                        <p>Application ID</p>
 
                     </div>
 
@@ -898,11 +444,585 @@
 
 
 </div>
-<div id="method_startNewThread" class="method item">
-    <h3 class="name"><code>startNewThread</code></h3>
+<div id="method_getRoomByContract" class="method item">
+    <h3 class="name"><code>getRoomByContract</code></h3>
 
         <div class="args">
             <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>company</code>
+                </li>
+                <li class="arg">
+                        <code>contractId</code>
+                </li>
+                <li class="arg">
+                        <code>params</code>
+                </li>
+                <li class="arg">
+                        <code>callback</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+        <span class="flag async">async</span>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_routers_messages.js.html#l97"><code>lib&#x2F;routers&#x2F;messages.js:97</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Get a specific room by contract ID</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">company</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>Company ID</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">contractId</code>
+                        <span class="type">Integer</span>
+
+
+                    <div class="param-description">
+                        <p>Contract ID</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">params</code>
+                        <span class="type">Hash</span>
+
+
+                    <div class="param-description">
+                        <p>Parameters</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">callback</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>Callback function</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_getRoomByOffer" class="method item">
+    <h3 class="name"><code>getRoomByOffer</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>company</code>
+                </li>
+                <li class="arg">
+                        <code>offerId</code>
+                </li>
+                <li class="arg">
+                        <code>params</code>
+                </li>
+                <li class="arg">
+                        <code>callback</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+        <span class="flag async">async</span>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_routers_messages.js.html#l65"><code>lib&#x2F;routers&#x2F;messages.js:65</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Get a specific room by offer ID</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">company</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>Company ID</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">offerId</code>
+                        <span class="type">Integer</span>
+
+
+                    <div class="param-description">
+                        <p>Offer ID</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">params</code>
+                        <span class="type">Hash</span>
+
+
+                    <div class="param-description">
+                        <p>Parameters</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">callback</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>Callback function</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_getRoomDetails" class="method item">
+    <h3 class="name"><code>getRoomDetails</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>company</code>
+                </li>
+                <li class="arg">
+                        <code>roomId</code>
+                </li>
+                <li class="arg">
+                        <code>params</code>
+                </li>
+                <li class="arg">
+                        <code>callback</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+        <span class="flag async">async</span>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_routers_messages.js.html#l49"><code>lib&#x2F;routers&#x2F;messages.js:49</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Get a specific room information</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">company</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>Company ID</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">roomId</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>Room ID</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">params</code>
+                        <span class="type">Hash</span>
+
+
+                    <div class="param-description">
+                        <p>Parameters</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">callback</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>Callback function</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_getRooms" class="method item">
+    <h3 class="name"><code>getRooms</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>company</code>
+                </li>
+                <li class="arg">
+                        <code>params</code>
+                </li>
+                <li class="arg">
+                        <code>callback</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+        <span class="flag async">async</span>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_routers_messages.js.html#l35"><code>lib&#x2F;routers&#x2F;messages.js:35</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Retrieve rooms information</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">company</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>Company ID</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">params</code>
+                        <span class="type">Hash</span>
+
+
+                    <div class="param-description">
+                        <p>Parameters</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">callback</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>Callback function</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_sendMessageToRoom" class="method item">
+    <h3 class="name"><code>sendMessageToRoom</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>company</code>
+                </li>
+                <li class="arg">
+                        <code>roomId</code>
+                </li>
+                <li class="arg">
+                        <code>params</code>
+                </li>
+                <li class="arg">
+                        <code>callback</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+        <span class="flag async">async</span>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_routers_messages.js.html#l128"><code>lib&#x2F;routers&#x2F;messages.js:128</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Send a message to a room</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">company</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>Company ID</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">roomId</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>Room ID</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">params</code>
+                        <span class="type">Hash</span>
+
+
+                    <div class="param-description">
+                        <p>Parameters</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">callback</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>Callback function</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_updateRoomMetadata" class="method item">
+    <h3 class="name"><code>updateRoomMetadata</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>company</code>
+                </li>
+                <li class="arg">
+                        <code>roomId</code>
+                </li>
+                <li class="arg">
+                        <code>params</code>
+                </li>
+                <li class="arg">
+                        <code>callback</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+        <span class="flag async">async</span>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_routers_messages.js.html#l161"><code>lib&#x2F;routers&#x2F;messages.js:161</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Update the metadata of a room</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">company</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>Company ID</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">roomId</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>Room ID</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">params</code>
+                        <span class="type">Hash</span>
+
+
+                    <div class="param-description">
+                        <p>Parameters</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">callback</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>Callback function</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_updateRoomSettings" class="method item">
+    <h3 class="name"><code>updateRoomSettings</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>company</code>
+                </li>
+                <li class="arg">
+                        <code>roomId</code>
+                </li>
                 <li class="arg">
                         <code>username</code>
                 </li>
@@ -926,7 +1046,7 @@
     <div class="meta">
                 <p>
                 Defined in
-        <a href="../files/lib_routers_mc.js.html#l124"><code>lib&#x2F;routers&#x2F;mc.js:124</code></a>
+        <a href="../files/lib_routers_messages.js.html#l144"><code>lib&#x2F;routers&#x2F;messages.js:144</code></a>
         </p>
 
 
@@ -934,7 +1054,7 @@
     </div>
 
     <div class="description">
-        <p>Send new message</p>
+        <p>Update a room settings</p>
 
     </div>
 
@@ -943,12 +1063,34 @@
 
             <ul class="params-list">
                 <li class="param">
+                        <code class="param-name">company</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>Company ID</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">roomId</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>Room ID</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
                         <code class="param-name">username</code>
                         <span class="type">String</span>
 
 
                     <div class="param-description">
-                        <p>Username</p>
+                        <p>User ID</p>
 
                     </div>
 
@@ -986,33 +1128,33 @@
             <div id="properties" class="api-class-tabpanel">
                 <h2 class="off-left">Properties</h2>
 
-                    <div id="property_entryPoint" class="property item">
-                        <h3 class="name"><code>entryPoint</code></h3>
-                        <span class="type">String</span>
-                    
-                    
-                    
-                            <span class="flag final">final</span>
-                    
-                            <span class="flag static">static</span>
-                    
-                        <div class="meta">
-                                    <p>
-                                    Defined in
-                            <a href="../files/lib_routers_mc.js.html#l15"><code>lib&#x2F;routers&#x2F;mc.js:15</code></a>
-                            </p>
-                    
-                    
-                        </div>
-                    
-                        <div class="description">
-                            
-                        </div>
-                    
-                            <p><strong>Default:</strong> api</p>
-                    
-                    
-                    </div>
+<div id="property_entryPoint" class="property item">
+    <h3 class="name"><code>entryPoint</code></h3>
+    <span class="type">String</span>
+
+
+
+        <span class="flag final">final</span>
+
+        <span class="flag static">static</span>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_routers_messages.js.html#l15"><code>lib&#x2F;routers&#x2F;messages.js:15</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+        <p><strong>Default:</strong> api</p>
+
+
+</div>
             </div>
 
 

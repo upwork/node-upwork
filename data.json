@@ -266,13 +266,13 @@
             "fors": {},
             "namespaces": {}
         },
-        "lib/routers/mc.js": {
-            "name": "lib/routers/mc.js",
+        "lib/routers/messages.js": {
+            "name": "lib/routers/messages.js",
             "modules": {
-                "routes.mc": 1
+                "routes.messages": 1
             },
             "classes": {
-                "Mc": 1
+                "Messages": 1
             },
             "fors": {},
             "namespaces": {}
@@ -392,6 +392,7 @@
         "routes.activities.engagement": {
             "name": "routes.activities.engagement",
             "submodules": {},
+            "elements": {},
             "classes": {
                 "Engagement": 1
             },
@@ -404,6 +405,7 @@
         "routes.activities.team": {
             "name": "routes.activities.team",
             "submodules": {},
+            "elements": {},
             "classes": {
                 "Team": 1
             },
@@ -416,6 +418,7 @@
         "routes.freelancers.profile": {
             "name": "routes.freelancers.profile",
             "submodules": {},
+            "elements": {},
             "classes": {},
             "fors": {},
             "namespaces": {},
@@ -426,6 +429,7 @@
         "routes.freelancers.search": {
             "name": "routes.freelancers.search",
             "submodules": {},
+            "elements": {},
             "classes": {},
             "fors": {},
             "namespaces": {},
@@ -436,6 +440,7 @@
         "routes.hr.clients.applications": {
             "name": "routes.hr.clients.applications",
             "submodules": {},
+            "elements": {},
             "classes": {},
             "fors": {},
             "namespaces": {},
@@ -446,6 +451,7 @@
         "routes.hr.clients.offers": {
             "name": "routes.hr.clients.offers",
             "submodules": {},
+            "elements": {},
             "classes": {},
             "fors": {},
             "namespaces": {},
@@ -456,6 +462,7 @@
         "routes.hr.contractors.applications": {
             "name": "routes.hr.contractors.applications",
             "submodules": {},
+            "elements": {},
             "classes": {
                 "Applications": 1
             },
@@ -468,6 +475,7 @@
         "routes.hr.contractors.offers": {
             "name": "routes.hr.contractors.offers",
             "submodules": {},
+            "elements": {},
             "classes": {
                 "Offers": 1
             },
@@ -480,6 +488,7 @@
         "routes.hr.contracts": {
             "name": "routes.hr.contracts",
             "submodules": {},
+            "elements": {},
             "classes": {},
             "fors": {},
             "namespaces": {},
@@ -490,6 +499,7 @@
         "routes.hr.engagements": {
             "name": "routes.hr.engagements",
             "submodules": {},
+            "elements": {},
             "classes": {
                 "Engagements": 1
             },
@@ -502,6 +512,7 @@
         "routes.hr.interviews": {
             "name": "routes.hr.interviews",
             "submodules": {},
+            "elements": {},
             "classes": {},
             "fors": {},
             "namespaces": {},
@@ -512,6 +523,7 @@
         "routes.hr.jobs": {
             "name": "routes.hr.jobs",
             "submodules": {},
+            "elements": {},
             "classes": {
                 "Jobs": 1
             },
@@ -524,6 +536,7 @@
         "routes.hr.milestones": {
             "name": "routes.hr.milestones",
             "submodules": {},
+            "elements": {},
             "classes": {},
             "fors": {},
             "namespaces": {},
@@ -534,6 +547,7 @@
         "routes.hr.roles": {
             "name": "routes.hr.roles",
             "submodules": {},
+            "elements": {},
             "classes": {
                 "Roles": 1
             },
@@ -546,6 +560,7 @@
         "routes.hr.submissions": {
             "name": "routes.hr.submissions",
             "submodules": {},
+            "elements": {},
             "classes": {
                 "Interviews": 1
             },
@@ -558,6 +573,7 @@
         "routes.jobs.profile": {
             "name": "routes.jobs.profile",
             "submodules": {},
+            "elements": {},
             "classes": {
                 "Profile": 1
             },
@@ -570,6 +586,7 @@
         "routes.jobs.search": {
             "name": "routes.jobs.search",
             "submodules": {},
+            "elements": {},
             "classes": {
                 "Search": 1
             },
@@ -582,6 +599,7 @@
         "routes.organization.companies": {
             "name": "routes.organization.companies",
             "submodules": {},
+            "elements": {},
             "classes": {
                 "Companies": 1
             },
@@ -594,6 +612,7 @@
         "routes.organization.teams": {
             "name": "routes.organization.teams",
             "submodules": {},
+            "elements": {},
             "classes": {},
             "fors": {},
             "namespaces": {},
@@ -604,6 +623,7 @@
         "routes.organization.users": {
             "name": "routes.organization.users",
             "submodules": {},
+            "elements": {},
             "classes": {
                 "Users": 1
             },
@@ -616,6 +636,7 @@
         "routes.reports.finance.accounts": {
             "name": "routes.reports.finance.accounts",
             "submodules": {},
+            "elements": {},
             "classes": {
                 "Accounts": 1
             },
@@ -628,6 +649,7 @@
         "routes.reports.finance.billings": {
             "name": "routes.reports.finance.billings",
             "submodules": {},
+            "elements": {},
             "classes": {
                 "Billings": 1
             },
@@ -640,6 +662,7 @@
         "routes.reports.finance.earnings": {
             "name": "routes.reports.finance.earnings",
             "submodules": {},
+            "elements": {},
             "classes": {
                 "Earnings": 1
             },
@@ -652,6 +675,7 @@
         "routes.reports.time": {
             "name": "routes.reports.time",
             "submodules": {},
+            "elements": {},
             "classes": {
                 "Time": 1
             },
@@ -664,6 +688,7 @@
         "routes.auth": {
             "name": "routes.auth",
             "submodules": {},
+            "elements": {},
             "classes": {
                 "Auth": 1
             },
@@ -673,21 +698,23 @@
             "file": "lib/routers/auth.js",
             "line": 24
         },
-        "routes.mc": {
-            "name": "routes.mc",
+        "routes.messages": {
+            "name": "routes.messages",
             "submodules": {},
+            "elements": {},
             "classes": {
-                "Mc": 1
+                "Messages": 1
             },
             "fors": {},
             "namespaces": {},
             "tag": "module",
-            "file": "lib/routers/mc.js",
+            "file": "lib/routers/messages.js",
             "line": 24
         },
         "routes.metadata": {
             "name": "routes.metadata",
             "submodules": {},
+            "elements": {},
             "classes": {
                 "Metadata": 1
             },
@@ -700,6 +727,7 @@
         "routes.payments": {
             "name": "routes.payments",
             "submodules": {},
+            "elements": {},
             "classes": {
                 "Payments": 1
             },
@@ -712,6 +740,7 @@
         "routes.snapshot": {
             "name": "routes.snapshot",
             "submodules": {},
+            "elements": {},
             "classes": {
                 "Snapshot": 1
             },
@@ -724,6 +753,7 @@
         "routes.teams": {
             "name": "routes.teams",
             "submodules": {},
+            "elements": {},
             "classes": {
                 "Teams": 1
             },
@@ -736,6 +766,7 @@
         "routes.workdays": {
             "name": "routes.workdays",
             "submodules": {},
+            "elements": {},
             "classes": {
                 "Workdays": 1
             },
@@ -748,6 +779,7 @@
         "routes.workdiary": {
             "name": "routes.workdiary",
             "submodules": {},
+            "elements": {},
             "classes": {
                 "Workdiary": 1
             },
@@ -760,6 +792,7 @@
         "api": {
             "name": "api",
             "submodules": {},
+            "elements": {},
             "classes": {
                 "UpworkApi": 1
             },
@@ -777,6 +810,7 @@
         "client": {
             "name": "client",
             "submodules": {},
+            "elements": {},
             "classes": {
                 "Client": 1
             },
@@ -792,6 +826,7 @@
         "config": {
             "name": "config",
             "submodules": {},
+            "elements": {},
             "classes": {
                 "Config": 1
             },
@@ -804,6 +839,7 @@
         "debug": {
             "name": "debug",
             "submodules": {},
+            "elements": {},
             "classes": {
                 "Debug": 1
             },
@@ -1067,19 +1103,19 @@
             "line": 24,
             "is_constructor": 1
         },
-        "Mc": {
-            "name": "Mc",
-            "shortname": "Mc",
+        "Messages": {
+            "name": "Messages",
+            "shortname": "Messages",
             "classitems": [],
             "plugins": [],
             "extensions": [],
             "plugin_for": [],
             "extension_for": [],
-            "module": "routes.mc",
+            "module": "routes.messages",
             "namespace": "",
-            "file": "lib/routers/mc.js",
+            "file": "lib/routers/messages.js",
             "line": 24,
-            "description": "Message Center",
+            "description": "Messages",
             "is_constructor": 1
         },
         "Metadata": {
@@ -1210,6 +1246,7 @@
             "line": 22
         }
     },
+    "elements": {},
     "classitems": [
         {
             "file": "lib/routers/activities/engagement.js",
@@ -3754,19 +3791,19 @@
             "module": "routes.auth"
         },
         {
-            "file": "lib/routers/mc.js",
+            "file": "lib/routers/messages.js",
             "line": 1,
             "description": "Upwork auth library for using with public API by OAuth",
             "package": "UpworkAPI",
-            "since": "09/23/2014",
-            "copyright": "Copyright 2014(c) Upwork.com",
+            "since": "06/13/2016",
+            "copyright": "Copyright 2016(c) Upwork.com",
             "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
             "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
-            "class": "Mc",
+            "class": "Messages",
             "module": "routes.auth"
         },
         {
-            "file": "lib/routers/mc.js",
+            "file": "lib/routers/messages.js",
             "line": 15,
             "itemtype": "property",
             "name": "entryPoint",
@@ -3774,42 +3811,25 @@
             "default": "api",
             "static": 1,
             "final": 1,
-            "class": "Mc",
-            "module": "routes.mc"
+            "class": "Messages",
+            "module": "routes.messages"
         },
         {
-            "file": "lib/routers/mc.js",
+            "file": "lib/routers/messages.js",
             "line": 35,
-            "description": "Get trays",
+            "description": "Retrieve rooms information",
             "itemtype": "method",
-            "name": "getTrays",
+            "name": "getRooms",
             "params": [
                 {
-                    "name": "callback",
-                    "description": "Callback function",
-                    "type": "String"
-                }
-            ],
-            "async": 1,
-            "class": "Mc",
-            "module": "routes.mc"
-        },
-        {
-            "file": "lib/routers/mc.js",
-            "line": 47,
-            "description": "Get tray by type",
-            "itemtype": "method",
-            "name": "getTrayByType",
-            "params": [
-                {
-                    "name": "username",
-                    "description": "Username",
+                    "name": "company",
+                    "description": "Company ID",
                     "type": "String"
                 },
                 {
-                    "name": "type",
-                    "description": "Tray type/name",
-                    "type": "String"
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
                 },
                 {
                     "name": "callback",
@@ -3818,51 +3838,83 @@
                 }
             ],
             "async": 1,
-            "class": "Mc",
-            "module": "routes.mc"
+            "class": "Messages",
+            "module": "routes.messages"
         },
         {
-            "file": "lib/routers/mc.js",
-            "line": 61,
-            "description": "Get thread details",
+            "file": "lib/routers/messages.js",
+            "line": 49,
+            "description": "Get a specific room information",
             "itemtype": "method",
-            "name": "getThreadDetails",
+            "name": "getRoomDetails",
             "params": [
                 {
-                    "name": "username",
-                    "description": "Username",
+                    "name": "company",
+                    "description": "Company ID",
                     "type": "String"
                 },
                 {
-                    "name": "threadId",
-                    "description": "Thread ID",
+                    "name": "roomId",
+                    "description": "Room ID",
+                    "type": "String"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Messages",
+            "module": "routes.messages"
+        },
+        {
+            "file": "lib/routers/messages.js",
+            "line": 65,
+            "description": "Get a specific room by offer ID",
+            "itemtype": "method",
+            "name": "getRoomByOffer",
+            "params": [
+                {
+                    "name": "company",
+                    "description": "Company ID",
+                    "type": "String"
+                },
+                {
+                    "name": "offerId",
+                    "description": "Offer ID",
                     "type": "Integer"
                 },
                 {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
                     "name": "callback",
                     "description": "Callback function",
                     "type": "String"
                 }
             ],
             "async": 1,
-            "class": "Mc",
-            "module": "routes.mc"
+            "class": "Messages",
+            "module": "routes.messages"
         },
         {
-            "file": "lib/routers/mc.js",
-            "line": 75,
-            "description": "Get a specific thread by context",
+            "file": "lib/routers/messages.js",
+            "line": 81,
+            "description": "Get a specific room by application ID",
             "itemtype": "method",
-            "name": "getThreadByContext",
+            "name": "getRoomByApplication",
             "params": [
                 {
-                    "name": "username",
-                    "description": "Username",
-                    "type": "String"
-                },
-                {
-                    "name": "jobKey",
-                    "description": "Job key",
+                    "name": "company",
+                    "description": "Company ID",
                     "type": "String"
                 },
                 {
@@ -3871,11 +3923,9 @@
                     "type": "Integer"
                 },
                 {
-                    "name": "context",
-                    "description": "Context",
-                    "type": "String",
-                    "optional": true,
-                    "optdefault": "'Interviews'"
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
                 },
                 {
                     "name": "callback",
@@ -3884,63 +3934,24 @@
                 }
             ],
             "async": 1,
-            "class": "Mc",
-            "module": "routes.mc"
+            "class": "Messages",
+            "module": "routes.messages"
         },
         {
-            "file": "lib/routers/mc.js",
-            "line": 92,
-            "description": "Get a specific thread by context (last message content)",
+            "file": "lib/routers/messages.js",
+            "line": 97,
+            "description": "Get a specific room by contract ID",
             "itemtype": "method",
-            "name": "getThreadByContextLastPosts",
+            "name": "getRoomByContract",
             "params": [
                 {
-                    "name": "username",
-                    "description": "Username",
+                    "name": "company",
+                    "description": "Company ID",
                     "type": "String"
                 },
                 {
-                    "name": "jobKey",
-                    "description": "Job key",
-                    "type": "String"
-                },
-                {
-                    "name": "applicationId",
-                    "description": "Application ID",
-                    "type": "Integer"
-                },
-                {
-                    "name": "context",
-                    "description": "Context",
-                    "type": "String",
-                    "optional": true,
-                    "optdefault": "'Interviews'"
-                },
-                {
-                    "name": "callback",
-                    "description": "Callback function",
-                    "type": "String"
-                }
-            ],
-            "async": 1,
-            "class": "Mc",
-            "module": "routes.mc"
-        },
-        {
-            "file": "lib/routers/mc.js",
-            "line": 109,
-            "description": "Update thread based on user actions",
-            "itemtype": "method",
-            "name": "markThread",
-            "params": [
-                {
-                    "name": "username",
-                    "description": "Username",
-                    "type": "String"
-                },
-                {
-                    "name": "threadId",
-                    "description": "Thread ID",
+                    "name": "contractId",
+                    "description": "Contract ID",
                     "type": "Integer"
                 },
                 {
@@ -3955,19 +3966,19 @@
                 }
             ],
             "async": 1,
-            "class": "Mc",
-            "module": "routes.mc"
+            "class": "Messages",
+            "module": "routes.messages"
         },
         {
-            "file": "lib/routers/mc.js",
-            "line": 124,
-            "description": "Send new message",
+            "file": "lib/routers/messages.js",
+            "line": 113,
+            "description": "Create a new room",
             "itemtype": "method",
-            "name": "startNewThread",
+            "name": "createRoom",
             "params": [
                 {
-                    "name": "username",
-                    "description": "Username",
+                    "name": "company",
+                    "description": "Company ID",
                     "type": "String"
                 },
                 {
@@ -3982,25 +3993,25 @@
                 }
             ],
             "async": 1,
-            "class": "Mc",
-            "module": "routes.mc"
+            "class": "Messages",
+            "module": "routes.messages"
         },
         {
-            "file": "lib/routers/mc.js",
-            "line": 138,
-            "description": "Reply to existend thread",
+            "file": "lib/routers/messages.js",
+            "line": 128,
+            "description": "Send a message to a room",
             "itemtype": "method",
-            "name": "replyToThread",
+            "name": "sendMessageToRoom",
             "params": [
                 {
-                    "name": "username",
-                    "description": "Username",
+                    "name": "company",
+                    "description": "Company ID",
                     "type": "String"
                 },
                 {
-                    "name": "threadId",
-                    "description": "Thread ID",
-                    "type": "Integer"
+                    "name": "roomId",
+                    "description": "Room ID",
+                    "type": "String"
                 },
                 {
                     "name": "params",
@@ -4014,8 +4025,77 @@
                 }
             ],
             "async": 1,
-            "class": "Mc",
-            "module": "routes.mc"
+            "class": "Messages",
+            "module": "routes.messages"
+        },
+        {
+            "file": "lib/routers/messages.js",
+            "line": 144,
+            "description": "Update a room settings",
+            "itemtype": "method",
+            "name": "updateRoomSettings",
+            "params": [
+                {
+                    "name": "company",
+                    "description": "Company ID",
+                    "type": "String"
+                },
+                {
+                    "name": "roomId",
+                    "description": "Room ID",
+                    "type": "String"
+                },
+                {
+                    "name": "username",
+                    "description": "User ID",
+                    "type": "String"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Messages",
+            "module": "routes.messages"
+        },
+        {
+            "file": "lib/routers/messages.js",
+            "line": 161,
+            "description": "Update the metadata of a room",
+            "itemtype": "method",
+            "name": "updateRoomMetadata",
+            "params": [
+                {
+                    "name": "company",
+                    "description": "Company ID",
+                    "type": "String"
+                },
+                {
+                    "name": "roomId",
+                    "description": "Room ID",
+                    "type": "String"
+                },
+                {
+                    "name": "params",
+                    "description": "Parameters",
+                    "type": "Hash"
+                },
+                {
+                    "name": "callback",
+                    "description": "Callback function",
+                    "type": "String"
+                }
+            ],
+            "async": 1,
+            "class": "Messages",
+            "module": "routes.messages"
         },
         {
             "file": "lib/routers/metadata.js",
@@ -4027,7 +4107,7 @@
             "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
             "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
             "class": "Metadata",
-            "module": "routes.mc"
+            "module": "routes.messages"
         },
         {
             "file": "lib/routers/metadata.js",
@@ -5220,15 +5300,15 @@
         },
         {
             "message": "unknown tag: package",
-            "line": " lib/routers/mc.js:1"
+            "line": " lib/routers/messages.js:1"
         },
         {
             "message": "unknown tag: copyright",
-            "line": " lib/routers/mc.js:1"
+            "line": " lib/routers/messages.js:1"
         },
         {
             "message": "unknown tag: license",
-            "line": " lib/routers/mc.js:1"
+            "line": " lib/routers/messages.js:1"
         },
         {
             "message": "unknown tag: package",
@@ -5452,7 +5532,7 @@
         },
         {
             "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
-            "line": " lib/routers/mc.js:1"
+            "line": " lib/routers/messages.js:1"
         },
         {
             "message": "Missing item type\nUpwork auth library for using with public API by OAuth",

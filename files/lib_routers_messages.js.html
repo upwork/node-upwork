@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>routes.mc - node-upwork</title>
+    <title>lib/routers/messages.js - node-upwork</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
@@ -51,7 +51,7 @@
                                 <li><a href="../classes/Engagements.html">Engagements</a></li>
                                 <li><a href="../classes/Interviews.html">Interviews</a></li>
                                 <li><a href="../classes/Jobs.html">Jobs</a></li>
-                                <li><a href="../classes/Mc.html">Mc</a></li>
+                                <li><a href="../classes/Messages.html">Messages</a></li>
                                 <li><a href="../classes/Metadata.html">Metadata</a></li>
                                 <li><a href="../classes/Offers.html">Offers</a></li>
                                 <li><a href="../classes/Payments.html">Payments</a></li>
@@ -67,6 +67,7 @@
                                 <li><a href="../classes/Workdays.html">Workdays</a></li>
                                 <li><a href="../classes/Workdiary.html">Workdiary</a></li>
                             </ul>
+                
                 
                             <ul id="api-modules" class="apis modules">
                                 <li><a href="../modules/api.html">api</a></li>
@@ -91,7 +92,7 @@
                                 <li><a href="../modules/routes.hr.submissions.html">routes.hr.submissions</a></li>
                                 <li><a href="../modules/routes.jobs.profile.html">routes.jobs.profile</a></li>
                                 <li><a href="../modules/routes.jobs.search.html">routes.jobs.search</a></li>
-                                <li><a href="../modules/routes.mc.html">routes.mc</a></li>
+                                <li><a href="../modules/routes.messages.html">routes.messages</a></li>
                                 <li><a href="../modules/routes.metadata.html">routes.metadata</a></li>
                                 <li><a href="../modules/routes.organization.companies.html">routes.organization.companies</a></li>
                                 <li><a href="../modules/routes.organization.teams.html">routes.organization.teams</a></li>
@@ -138,37 +139,187 @@
             <div class="apidocs">
                 <div id="docs-main">
                     <div class="content">
-<h1>routes.mc Module</h1>
-<div class="box clearfix meta">
+<h1 class="file-heading">File: lib/routers/messages.js</h1>
 
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+ * Upwork auth library for using with public API by OAuth
+ *
+ * @package     UpworkAPI
+ * @since       06/13/2016
+ * @copyright   Copyright 2016(c) Upwork.com
+ * @author      Maksym Novozhylov &lt;mnovozhilov@upwork.com&gt;
+ * @license     Upwork&#x27;s API Terms of Use {@link https://developers.upwork.com/api-tos.html}
+ */
 
-        <div class="foundat">
-            Defined in: <a href="../files/lib_routers_mc.js.html#l24"><code>lib&#x2F;routers&#x2F;mc.js:24</code></a>
-        </div>
+/**
+ * @module routes.messages
+ */
 
-</div>
+/**
+ * @property entryPoint
+ * @type String
+ * @default api
+ * @static
+ * @final
+ */
+var entryPoint = &#x27;api&#x27;;
 
+/**
+ * Messages
+ *
+ * @class Messages
+ * @constructor
+ */
+exports.Messages = function(api) {
+  this.api = api;
+  this.api.epoint = entryPoint;
+}
 
-<div class="box intro">
-    
-</div>
+/**
+ * Retrieve rooms information
+ *
+ * @method getRooms
+ * @param company {String} Company ID
+ * @param params {Hash} Parameters
+ * @param callback {String} Callback function
+ * @async
+ */
+exports.Messages.prototype.getRooms = function(company, params, callback) {
+  debug(&#x27;running request&#x27;);
+  this.api.client.get(&#x27;messages/v3/&#x27; + company + &#x27;/rooms&#x27;, params, callback);
+}
 
+/**
+ * Get a specific room information
+ *
+ * @method getRoomDetails
+ * @param company {String} Company ID
+ * @param roomId {String} Room ID
+ * @param params {Hash} Parameters
+ * @param callback {String} Callback function
+ * @async
+ */
+exports.Messages.prototype.getRoomDetails = function(company, roomId, params, callback) {
+  params = params || {};
+  debug(&#x27;running request&#x27;);
+  this.api.client.get(&#x27;message/v3/&#x27; + company + &#x27;/rooms/&#x27; + roomId, params, callback);
+}
 
-<div class="yui3-g">
-    <div class="yui3-u-1-2">
-            <p>This module provides the following classes:</p>
+/**
+ * Get a specific room by offer ID
+ *
+ * @method getRoomByOffer
+ * @param company {String} Company ID
+ * @param offerId {Integer} Offer ID
+ * @param params {Hash} Parameters
+ * @param callback {String} Callback function
+ * @async
+ */
+exports.Messages.prototype.getRoomByOffer = function(company, offerId, params, callback) {
+  params = params || {};
+  debug(&#x27;running request&#x27;);
+  this.api.client.get(&#x27;message/v3/&#x27; + company + &#x27;/rooms/offers/&#x27; + offerId, params, callback);
+}
 
-            <ul class="module-classes">
-                <li class="module-class">
-                    <a href="../classes/Mc.html">
-                        Mc
-                    </a>
-                </li>
-            </ul>
-    </div>
+/**
+ * Get a specific room by application ID
+ *
+ * @method getRoomByApplication
+ * @param company {String} Company ID
+ * @param applicationId {Integer} Application ID
+ * @param params {Hash} Parameters
+ * @param callback {String} Callback function
+ * @async
+ */
+exports.Messages.prototype.getRoomByApplication = function(company, applicationId, params, callback) {
+  params = params || {};
+  debug(&#x27;running request&#x27;);
+  this.api.client.get(&#x27;message/v3/&#x27; + company + &#x27;/rooms/applications/&#x27; + applicationId, params, callback);
+}
 
-    <div class="yui3-u-1-2">
-    </div>
+/**
+ * Get a specific room by contract ID
+ *
+ * @method getRoomByContract
+ * @param company {String} Company ID
+ * @param contractId {Integer} Contract ID
+ * @param params {Hash} Parameters
+ * @param callback {String} Callback function
+ * @async
+ */
+exports.Messages.prototype.getRoomByContract = function(company, contractId, params, callback) {
+  params = params || {};
+  debug(&#x27;running request&#x27;);
+  this.api.client.get(&#x27;message/v3/&#x27; + company + &#x27;/rooms/contracts/&#x27; + contractId, params, callback);
+}
+
+/**
+ * Create a new room
+ *
+ * @method createRoom
+ * @param company {String} Company ID
+ * @param params {Hash} Parameters
+ * @param callback {String} Callback function
+ * @async
+ */
+exports.Messages.prototype.createRoom = function(company, params, callback) {
+  params = params || {};
+  debug(&#x27;running request&#x27;);
+  this.api.client.post(&#x27;message/v3/&#x27; + company + &#x27;/rooms&#x27;, params, callback);
+}
+
+/**
+ * Send a message to a room
+ *
+ * @method sendMessageToRoom
+ * @param company {String} Company ID
+ * @param roomId {String} Room ID
+ * @param params {Hash} Parameters
+ * @param callback {String} Callback function
+ * @async
+ */
+exports.Messages.prototype.sendMessageToRoom = function(company, roomId, params, callback) {
+  params = params || {};
+  debug(&#x27;running request&#x27;);
+  this.api.client.post(&#x27;message/v3/&#x27; + company + &#x27;/rooms/&#x27; + roomId + &#x27;/stories&#x27;, params, callback);
+}
+
+/**
+ * Update a room settings
+ *
+ * @method updateRoomSettings
+ * @param company {String} Company ID
+ * @param roomId {String} Room ID
+ * @param username {String} User ID
+ * @param params {Hash} Parameters
+ * @param callback {String} Callback function
+ * @async
+ */
+exports.Messages.prototype.updateRoomSettings = function(company, roomId, username, params, callback) {
+  params = params || {};
+  debug(&#x27;running request&#x27;);
+  this.api.client.put(&#x27;message/v3/&#x27; + company + &#x27;/rooms/&#x27; + roomId + &#x27;/users/&#x27; + username, params, callback);
+}
+
+/**
+ * Update the metadata of a room
+ *
+ * @method updateRoomMetadata
+ * @param company {String} Company ID
+ * @param roomId {String} Room ID
+ * @param params {Hash} Parameters
+ * @param callback {String} Callback function
+ * @async
+ */
+exports.Messages.prototype.updateRoomMetadata = function(company, roomId, params, callback) {
+  params = params || {};
+  debug(&#x27;running request&#x27;);
+  this.api.client.put(&#x27;message/v3/&#x27; + company + &#x27;/rooms/&#x27; + roomId, params, callback);
+}
+
+    </pre>
 </div>
                     </div>
                 </div>

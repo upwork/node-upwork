@@ -14,7 +14,7 @@ YUI.add("yuidoc-meta", function(Y) {
         "Engagements",
         "Interviews",
         "Jobs",
-        "Mc",
+        "Messages",
         "Metadata",
         "Offers",
         "Payments",
@@ -53,7 +53,7 @@ YUI.add("yuidoc-meta", function(Y) {
         "routes.hr.submissions",
         "routes.jobs.profile",
         "routes.jobs.search",
-        "routes.mc",
+        "routes.messages",
         "routes.metadata",
         "routes.organization.companies",
         "routes.organization.teams",
@@ -158,8 +158,8 @@ YUI.add("yuidoc-meta", function(Y) {
             "name": "routes.jobs.search"
         },
         {
-            "displayName": "routes.mc",
-            "name": "routes.mc"
+            "displayName": "routes.messages",
+            "name": "routes.messages"
         },
         {
             "displayName": "routes.metadata",
@@ -213,6 +213,7 @@ YUI.add("yuidoc-meta", function(Y) {
             "displayName": "routes.workdiary",
             "name": "routes.workdiary"
         }
-    ]
+    ],
+    "elements": []
 } };
 });
