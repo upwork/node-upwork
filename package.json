@@ -1,7 +1,7 @@
 {
   "name": "upwork-api",
   "description": "Node.JS bindings for Upwork API",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": {
     "name": "Maksym Novozhylov",
     "email": "mnovozhilov@upwork.com"
