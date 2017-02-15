@@ -203,7 +203,7 @@ exports.Workdiary.prototype.get = function(company, username, date, params, call
  */
 exports.Workdiary.prototype.getByContract = function(contract, date, params, callback) {
   debug(&#x27;running request&#x27;);
-  this.api.client.get(&#x27;team/v1/workdiaries/contracts/&#x27; + contract + &#x27;/&#x27; + date, params, callback);
+  this.api.client.get(&#x27;team/v2/workdiaries/contracts/&#x27; + contract + &#x27;/&#x27; + date, params, callback);
 }
 
     </pre>

@@ -185,7 +185,7 @@ exports.Applications = function(api) {
  */
 exports.Applications.prototype.getList = function(params, callback) {
   debug(&#x27;running request&#x27;);
-  this.api.client.get(&#x27;hr/v3/contractors/applications&#x27;, params, callback);
+  this.api.client.get(&#x27;hr/v4/contractors/applications&#x27;, params, callback);
 }
 
 /**
@@ -198,7 +198,7 @@ exports.Applications.prototype.getList = function(params, callback) {
  */
 exports.Applications.prototype.getSpecific = function(reference, callback) {
   debug(&#x27;running request&#x27;);
-  this.api.client.get(&#x27;hr/v3/contractors/applications&#x27; + reference, {}, callback);
+  this.api.client.get(&#x27;hr/v4/contractors/applications&#x27; + reference, {}, callback);
 }
 
     </pre>

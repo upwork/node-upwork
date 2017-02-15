@@ -204,7 +204,7 @@ exports.Messages.prototype.getRooms = function(company, params, callback) {
 exports.Messages.prototype.getRoomDetails = function(company, roomId, params, callback) {
   params = params || {};
   debug(&#x27;running request&#x27;);
-  this.api.client.get(&#x27;message/v3/&#x27; + company + &#x27;/rooms/&#x27; + roomId, params, callback);
+  this.api.client.get(&#x27;messages/v3/&#x27; + company + &#x27;/rooms/&#x27; + roomId, params, callback);
 }
 
 /**
@@ -220,7 +220,7 @@ exports.Messages.prototype.getRoomDetails = function(company, roomId, params, ca
 exports.Messages.prototype.getRoomByOffer = function(company, offerId, params, callback) {
   params = params || {};
   debug(&#x27;running request&#x27;);
-  this.api.client.get(&#x27;message/v3/&#x27; + company + &#x27;/rooms/offers/&#x27; + offerId, params, callback);
+  this.api.client.get(&#x27;messages/v3/&#x27; + company + &#x27;/rooms/offers/&#x27; + offerId, params, callback);
 }
 
 /**
@@ -236,7 +236,7 @@ exports.Messages.prototype.getRoomByOffer = function(company, offerId, params, c
 exports.Messages.prototype.getRoomByApplication = function(company, applicationId, params, callback) {
   params = params || {};
   debug(&#x27;running request&#x27;);
-  this.api.client.get(&#x27;message/v3/&#x27; + company + &#x27;/rooms/applications/&#x27; + applicationId, params, callback);
+  this.api.client.get(&#x27;messages/v3/&#x27; + company + &#x27;/rooms/applications/&#x27; + applicationId, params, callback);
 }
 
 /**
@@ -252,7 +252,7 @@ exports.Messages.prototype.getRoomByApplication = function(company, applicationI
 exports.Messages.prototype.getRoomByContract = function(company, contractId, params, callback) {
   params = params || {};
   debug(&#x27;running request&#x27;);
-  this.api.client.get(&#x27;message/v3/&#x27; + company + &#x27;/rooms/contracts/&#x27; + contractId, params, callback);
+  this.api.client.get(&#x27;messages/v3/&#x27; + company + &#x27;/rooms/contracts/&#x27; + contractId, params, callback);
 }
 
 /**
@@ -267,7 +267,7 @@ exports.Messages.prototype.getRoomByContract = function(company, contractId, par
 exports.Messages.prototype.createRoom = function(company, params, callback) {
   params = params || {};
   debug(&#x27;running request&#x27;);
-  this.api.client.post(&#x27;message/v3/&#x27; + company + &#x27;/rooms&#x27;, params, callback);
+  this.api.client.post(&#x27;messages/v3/&#x27; + company + &#x27;/rooms&#x27;, params, callback);
 }
 
 /**
@@ -283,7 +283,7 @@ exports.Messages.prototype.createRoom = function(company, params, callback) {
 exports.Messages.prototype.sendMessageToRoom = function(company, roomId, params, callback) {
   params = params || {};
   debug(&#x27;running request&#x27;);
-  this.api.client.post(&#x27;message/v3/&#x27; + company + &#x27;/rooms/&#x27; + roomId + &#x27;/stories&#x27;, params, callback);
+  this.api.client.post(&#x27;messages/v3/&#x27; + company + &#x27;/rooms/&#x27; + roomId + &#x27;/stories&#x27;, params, callback);
 }
 
 /**
@@ -300,7 +300,7 @@ exports.Messages.prototype.sendMessageToRoom = function(company, roomId, params,
 exports.Messages.prototype.updateRoomSettings = function(company, roomId, username, params, callback) {
   params = params || {};
   debug(&#x27;running request&#x27;);
-  this.api.client.put(&#x27;message/v3/&#x27; + company + &#x27;/rooms/&#x27; + roomId + &#x27;/users/&#x27; + username, params, callback);
+  this.api.client.put(&#x27;messages/v3/&#x27; + company + &#x27;/rooms/&#x27; + roomId + &#x27;/users/&#x27; + username, params, callback);
 }
 
 /**
@@ -316,7 +316,7 @@ exports.Messages.prototype.updateRoomSettings = function(company, roomId, userna
 exports.Messages.prototype.updateRoomMetadata = function(company, roomId, params, callback) {
   params = params || {};
   debug(&#x27;running request&#x27;);
-  this.api.client.put(&#x27;message/v3/&#x27; + company + &#x27;/rooms/&#x27; + roomId, params, callback);
+  this.api.client.put(&#x27;messages/v3/&#x27; + company + &#x27;/rooms/&#x27; + roomId, params, callback);
 }
 
     </pre>
