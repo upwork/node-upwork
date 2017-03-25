@@ -7,8 +7,7 @@ Node.JS bindings for Upwork API
 [![Build Status](https://travis-ci.org/upwork/node-upwork.svg)](https://travis-ci.org/upwork/node-upwork)
 
 # Introduction
-This project provides a set of resources of Upwork API from http://developers.upwork.com
- based on OAuth 1.0a.
+This project provides a set of resources of Upwork API from http://developers.upwork.com based on OAuth 1.0a.
 
 # Features
 These are the supported API resources:
@@ -24,7 +23,7 @@ These are the supported API resources:
 * Metadata
 * Snapshot
 * Team
-* Workd Diary
+* Work Diary
 * Activities
 
 # License
@@ -62,7 +61,7 @@ It also describes how to use your own client together with this Upwork library.
 
 ## Installation
 
-To install the library please run the following command::
+To install the library please run the following command:
 
     $ npm install upwork-api
 
@@ -72,11 +71,11 @@ Before you start using Upwork API, you will need to obtain your pair of API keys
 Visit the `Upwork API documentation Center <https://developers.upwork.com/#authentication_oauth-10>`_
 for full details.
 
-1. - `example/example.js` to `myapp.js`
+1. `example/example.js` to `myapp.js`
 2. open `myapp.js `and type the consumerKey and consumerSecret that you previously got from the API Center.
 
-***That's all. Run your app as `node myapp.js` and have fun.***'
+***That's all. Run your app as `node myapp.js` and have fun.***
 
 ## Documentation
 
-Please use YUIDoc to build the local copy of the documentation or use http://upwork.github.io/node-upwork/
+Please use YUIDoc to build the local copy of the documentation or use http://upwork.github.io/node-upwork/.
