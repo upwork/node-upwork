@@ -103,7 +103,6 @@
                                 <li><a href="../modules/routes.reports.finance.earnings.html">routes.reports.finance.earnings</a></li>
                                 <li><a href="../modules/routes.reports.time.html">routes.reports.time</a></li>
                                 <li><a href="../modules/routes.snapshot.html">routes.snapshot</a></li>
-                                <li><a href="../modules/routes.teams.html">routes.teams</a></li>
                                 <li><a href="../modules/routes.workdays.html">routes.workdays</a></li>
                                 <li><a href="../modules/routes.workdiary.html">routes.workdiary</a></li>
                             </ul>
@@ -144,10 +143,10 @@
 
 
         <div class="foundat">
-            Defined in: <a href="../files/lib_routers_teams.js.html#l24"><code>lib&#x2F;routers&#x2F;teams.js:24</code></a>
+            Defined in: <a href="../files/lib_routers_organization_teams.js.html#l24"><code>lib&#x2F;routers&#x2F;organization&#x2F;teams.js:24</code></a>
         </div>
 
-            Module: <a href="../modules/routes.teams.html">routes.teams</a>
+            Module: <a href="../modules/routes.organization.teams.html">routes.organization.teams</a>
 
 </div>
 
@@ -173,7 +172,7 @@
     <div class="meta">
                 <p>
                 Defined in
-        <a href="../files/lib_routers_teams.js.html#l24"><code>lib&#x2F;routers&#x2F;teams.js:24</code></a>
+        <a href="../files/lib_routers_organization_teams.js.html#l24"><code>lib&#x2F;routers&#x2F;organization&#x2F;teams.js:24</code></a>
         </p>
 
 
@@ -211,14 +210,6 @@
 
                             </li>
                             <li class="index-item method">
-                                <a href="#method_getList">getList</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_getSpecific">getSpecific</a>
-
-                            </li>
-                            <li class="index-item method">
                                 <a href="#method_getUsersInTeam">getUsersInTeam</a>
 
                             </li>
@@ -229,11 +220,6 @@
                     <h3>Properties</h3>
 
                     <ul class="index-list properties">
-                            <li class="index-item property">
-                                <a href="#property_entryPoint">entryPoint</a>
-
-                                    <span class="flag static">static</span>
-                            </li>
                             <li class="index-item property">
                                 <a href="#property_entryPoint">entryPoint</a>
 
@@ -268,7 +254,6 @@
         <span class="flag async">async</span>
 
     <div class="meta">
-                    <p>Provided by the <a href="../modules/routes.organization.teams.html">routes.organization.teams</a> module.</p>
                 <p>
                 Defined in
         <a href="../files/lib_routers_organization_teams.js.html#l33"><code>lib&#x2F;routers&#x2F;organization&#x2F;teams.js:33</code></a>
@@ -287,144 +272,6 @@
             <h4>Parameters:</h4>
 
             <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">callback</code>
-                        <span class="type">String</span>
-
-
-                    <div class="param-description">
-                        <p>Callback function</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
-</div>
-<div id="method_getList" class="method item">
-    <h3 class="name"><code>getList</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>callback</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-        <span class="flag async">async</span>
-
-    <div class="meta">
-                <p>
-                Defined in
-        <a href="../files/lib_routers_teams.js.html#l33"><code>lib&#x2F;routers&#x2F;teams.js:33</code></a>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Get Teamrooms</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">callback</code>
-                        <span class="type">String</span>
-
-
-                    <div class="param-description">
-                        <p>Callback function</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
-</div>
-<div id="method_getSpecific" class="method item">
-    <h3 class="name"><code>getSpecific</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>team</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-                <li class="arg">
-                        <code>callback</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-        <span class="flag async">async</span>
-
-    <div class="meta">
-                <p>
-                Defined in
-        <a href="../files/lib_routers_teams.js.html#l45"><code>lib&#x2F;routers&#x2F;teams.js:45</code></a>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Get specific team or company</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">team</code>
-                        <span class="type">String</span>
-
-
-                    <div class="param-description">
-                        <p>Teamroom or company ID</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">Hash</span>
-
-
-                    <div class="param-description">
-                        <p>Parameters</p>
-
-                    </div>
-
-                </li>
                 <li class="param">
                         <code class="param-name">callback</code>
                         <span class="type">String</span>
@@ -465,7 +312,6 @@
         <span class="flag async">async</span>
 
     <div class="meta">
-                    <p>Provided by the <a href="../modules/routes.organization.teams.html">routes.organization.teams</a> module.</p>
                 <p>
                 Defined in
         <a href="../files/lib_routers_organization_teams.js.html#l45"><code>lib&#x2F;routers&#x2F;organization&#x2F;teams.js:45</code></a>
@@ -528,37 +374,9 @@
         <span class="flag static">static</span>
 
     <div class="meta">
-                    <p>Provided by the <a href="../modules/routes.organization.teams.html">routes.organization.teams</a> module.</p>
                 <p>
                 Defined in
         <a href="../files/lib_routers_organization_teams.js.html#l15"><code>lib&#x2F;routers&#x2F;organization&#x2F;teams.js:15</code></a>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        
-    </div>
-
-        <p><strong>Default:</strong> api</p>
-
-
-</div>
-<div id="property_entryPoint" class="property item">
-    <h3 class="name"><code>entryPoint</code></h3>
-    <span class="type">String</span>
-
-
-
-        <span class="flag final">final</span>
-
-        <span class="flag static">static</span>
-
-    <div class="meta">
-                <p>
-                Defined in
-        <a href="../files/lib_routers_teams.js.html#l15"><code>lib&#x2F;routers&#x2F;teams.js:15</code></a>
         </p>
 
 

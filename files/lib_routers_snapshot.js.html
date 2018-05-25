@@ -103,7 +103,6 @@
                                 <li><a href="../modules/routes.reports.finance.earnings.html">routes.reports.finance.earnings</a></li>
                                 <li><a href="../modules/routes.reports.time.html">routes.reports.time</a></li>
                                 <li><a href="../modules/routes.snapshot.html">routes.snapshot</a></li>
-                                <li><a href="../modules/routes.teams.html">routes.teams</a></li>
                                 <li><a href="../modules/routes.workdays.html">routes.workdays</a></li>
                                 <li><a href="../modules/routes.workdiary.html">routes.workdiary</a></li>
                             </ul>
@@ -178,52 +177,6 @@ exports.Snapshot = function(api) {
 }
 
 /**
- * Get snaphot info
- *
- * @method get
- * @param company {String} Company
- * @param username {String} Username
- * @param ts {String} Timestamp
- * @param callback {String} Callback function
- * @async
- */
-exports.Snapshot.prototype.get = function(company, username, ts, callback) {
-  debug(&#x27;running request&#x27;);
-  this.api.client.get(&#x27;team/v1/snapshots/&#x27; + company + &#x27;/&#x27; + username + &#x27;/&#x27; + ts, {}, callback);
-}
-
-/**
- * Update snapshot
- *
- * @method update
- * @param company {String} Company
- * @param username {String} Username
- * @param ts {String} Timestamp
- * @param params {Hash} Parameters
- * @param callback {String} Callback function
- * @async
- */
-exports.Snapshot.prototype.update = function(company, username, ts, params, callback) {
-  debug(&#x27;running request&#x27;);
-  this.api.client.put(&#x27;team/v1/snapshots/&#x27; + company + &#x27;/&#x27; + username + &#x27;/&#x27; + ts, params, callback);
-}
-
-/**
- * Delete snaphot
- *
- * @method delete
- * @param company {String} Company
- * @param username {String} Username
- * @param ts {String} Timestamp
- * @param callback {String} Callback function
- * @async
- */
-exports.Snapshot.prototype.delete = function(company, username, ts, callback) {
-  debug(&#x27;running request&#x27;);
-  this.api.client.delete(&#x27;team/v1/snapshots/&#x27; + company + &#x27;/&#x27; + username + &#x27;/&#x27; + ts, {}, callback);
-}
-
-/**
  * Get snaphot info by specific contract
  *
  * @method get
@@ -234,7 +187,7 @@ exports.Snapshot.prototype.delete = function(company, username, ts, callback) {
  */
 exports.Snapshot.prototype.getByContract = function(contract, ts, callback) {
   debug(&#x27;running request&#x27;);
-  this.api.client.get(&#x27;team/v2/snapshots/contracts/&#x27; + contract + &#x27;/&#x27; + ts, {}, callback);
+  this.api.client.get(&#x27;team/v3/snapshots/contracts/&#x27; + contract + &#x27;/&#x27; + ts, {}, callback);
 }
 
 /**
@@ -249,7 +202,7 @@ exports.Snapshot.prototype.getByContract = function(contract, ts, callback) {
  */
 exports.Snapshot.prototype.updateByContract = function(contract, ts, params, callback) {
   debug(&#x27;running request&#x27;);
-  this.api.client.put(&#x27;team/v2/snapshots/contracts/&#x27; + contract + &#x27;/&#x27; + ts, params, callback);
+  this.api.client.put(&#x27;team/v3/snapshots/contracts/&#x27; + contract + &#x27;/&#x27; + ts, params, callback);
 }
 
 /**
@@ -263,7 +216,7 @@ exports.Snapshot.prototype.updateByContract = function(contract, ts, params, cal
  */
 exports.Snapshot.prototype.deleteByContract = function(contract, ts, callback) {
   debug(&#x27;running request&#x27;);
-  this.api.client.delete(&#x27;team/v2/snapshots/contracts/&#x27; + contract + &#x27;/&#x27; + ts, {}, callback);
+  this.api.client.delete(&#x27;team/v3/snapshots/contracts/&#x27; + contract + &#x27;/&#x27; + ts, {}, callback);
 }
 
     </pre>

@@ -196,7 +196,9 @@
             "modules": {
                 "routes.organization.teams": 1
             },
-            "classes": {},
+            "classes": {
+                "Teams": 1
+            },
             "fors": {},
             "namespaces": {}
         },
@@ -306,17 +308,6 @@
             },
             "classes": {
                 "Snapshot": 1
-            },
-            "fors": {},
-            "namespaces": {}
-        },
-        "lib/routers/teams.js": {
-            "name": "lib/routers/teams.js",
-            "modules": {
-                "routes.teams": 1
-            },
-            "classes": {
-                "Teams": 1
             },
             "fors": {},
             "namespaces": {}
@@ -613,12 +604,14 @@
             "name": "routes.organization.teams",
             "submodules": {},
             "elements": {},
-            "classes": {},
+            "classes": {
+                "Teams": 1
+            },
             "fors": {},
             "namespaces": {},
             "tag": "module",
             "file": "lib/routers/organization/teams.js",
-            "line": 11
+            "line": 24
         },
         "routes.organization.users": {
             "name": "routes.organization.users",
@@ -748,19 +741,6 @@
             "namespaces": {},
             "tag": "module",
             "file": "lib/routers/snapshot.js",
-            "line": 24
-        },
-        "routes.teams": {
-            "name": "routes.teams",
-            "submodules": {},
-            "elements": {},
-            "classes": {
-                "Teams": 1
-            },
-            "fors": {},
-            "namespaces": {},
-            "tag": "module",
-            "file": "lib/routers/teams.js",
             "line": 24
         },
         "routes.workdays": {
@@ -1027,9 +1007,9 @@
             "extensions": [],
             "plugin_for": [],
             "extension_for": [],
-            "module": "routes.teams",
+            "module": "routes.organization.teams",
             "namespace": "",
-            "file": "lib/routers/teams.js",
+            "file": "lib/routers/organization/teams.js",
             "line": 24,
             "is_constructor": 1
         },
@@ -4289,107 +4269,6 @@
         {
             "file": "lib/routers/snapshot.js",
             "line": 35,
-            "description": "Get snaphot info",
-            "itemtype": "method",
-            "name": "get",
-            "params": [
-                {
-                    "name": "company",
-                    "description": "Company",
-                    "type": "String"
-                },
-                {
-                    "name": "username",
-                    "description": "Username",
-                    "type": "String"
-                },
-                {
-                    "name": "ts",
-                    "description": "Timestamp",
-                    "type": "String"
-                },
-                {
-                    "name": "callback",
-                    "description": "Callback function",
-                    "type": "String"
-                }
-            ],
-            "async": 1,
-            "class": "Snapshot",
-            "module": "routes.snapshot"
-        },
-        {
-            "file": "lib/routers/snapshot.js",
-            "line": 50,
-            "description": "Update snapshot",
-            "itemtype": "method",
-            "name": "update",
-            "params": [
-                {
-                    "name": "company",
-                    "description": "Company",
-                    "type": "String"
-                },
-                {
-                    "name": "username",
-                    "description": "Username",
-                    "type": "String"
-                },
-                {
-                    "name": "ts",
-                    "description": "Timestamp",
-                    "type": "String"
-                },
-                {
-                    "name": "params",
-                    "description": "Parameters",
-                    "type": "Hash"
-                },
-                {
-                    "name": "callback",
-                    "description": "Callback function",
-                    "type": "String"
-                }
-            ],
-            "async": 1,
-            "class": "Snapshot",
-            "module": "routes.snapshot"
-        },
-        {
-            "file": "lib/routers/snapshot.js",
-            "line": 66,
-            "description": "Delete snaphot",
-            "itemtype": "method",
-            "name": "delete",
-            "params": [
-                {
-                    "name": "company",
-                    "description": "Company",
-                    "type": "String"
-                },
-                {
-                    "name": "username",
-                    "description": "Username",
-                    "type": "String"
-                },
-                {
-                    "name": "ts",
-                    "description": "Timestamp",
-                    "type": "String"
-                },
-                {
-                    "name": "callback",
-                    "description": "Callback function",
-                    "type": "String"
-                }
-            ],
-            "async": 1,
-            "class": "Snapshot",
-            "module": "routes.snapshot"
-        },
-        {
-            "file": "lib/routers/snapshot.js",
-            "line": 81,
             "description": "Get snaphot info by specific contract",
             "itemtype": "method",
             "name": "get",
@@ -4416,7 +4295,7 @@
         },
         {
             "file": "lib/routers/snapshot.js",
-            "line": 95,
+            "line": 49,
             "description": "Update snapshot by specific contract",
             "itemtype": "method",
             "name": "update",
@@ -4448,7 +4327,7 @@
         },
         {
             "file": "lib/routers/snapshot.js",
-            "line": 110,
+            "line": 64,
             "description": "Delete snaphot by specific contract",
             "itemtype": "method",
             "name": "delete",
@@ -4474,74 +4353,6 @@
             "module": "routes.snapshot"
         },
         {
-            "file": "lib/routers/teams.js",
-            "line": 1,
-            "description": "Upwork auth library for using with public API by OAuth",
-            "package": "UpworkAPI",
-            "since": "09/23/2014",
-            "copyright": "Copyright 2014(c) Upwork.com",
-            "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
-            "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
-            "class": "Teams",
-            "module": "routes.snapshot"
-        },
-        {
-            "file": "lib/routers/teams.js",
-            "line": 15,
-            "itemtype": "property",
-            "name": "entryPoint",
-            "type": "String",
-            "default": "api",
-            "static": 1,
-            "final": 1,
-            "class": "Teams",
-            "module": "routes.teams"
-        },
-        {
-            "file": "lib/routers/teams.js",
-            "line": 33,
-            "description": "Get Teamrooms",
-            "itemtype": "method",
-            "name": "getList",
-            "params": [
-                {
-                    "name": "callback",
-                    "description": "Callback function",
-                    "type": "String"
-                }
-            ],
-            "async": 1,
-            "class": "Teams",
-            "module": "routes.teams"
-        },
-        {
-            "file": "lib/routers/teams.js",
-            "line": 45,
-            "description": "Get specific team or company",
-            "itemtype": "method",
-            "name": "getSpecific",
-            "params": [
-                {
-                    "name": "team",
-                    "description": "Teamroom or company ID",
-                    "type": "String"
-                },
-                {
-                    "name": "params",
-                    "description": "Parameters",
-                    "type": "Hash"
-                },
-                {
-                    "name": "callback",
-                    "description": "Callback function",
-                    "type": "String"
-                }
-            ],
-            "async": 1,
-            "class": "Teams",
-            "module": "routes.teams"
-        },
-        {
             "file": "lib/routers/workdays.js",
             "line": 1,
             "description": "Upwork auth library for using with public API by OAuth",
@@ -4551,7 +4362,7 @@
             "author": "Maksym Novozhylov <mnovozhilov@upwork.com>",
             "license": "Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}",
             "class": "Workdays",
-            "module": "routes.teams"
+            "module": "routes.snapshot"
         },
         {
             "file": "lib/routers/workdays.js",
@@ -4676,11 +4487,6 @@
                     "type": "String"
                 },
                 {
-                    "name": "username",
-                    "description": "Username",
-                    "type": "String"
-                },
-                {
                     "name": "date",
                     "description": "Date",
                     "type": "String"
@@ -4702,7 +4508,7 @@
         },
         {
             "file": "lib/routers/workdiary.js",
-            "line": 49,
+            "line": 48,
             "description": "Get Work Diary by Contract",
             "itemtype": "method",
             "name": "getByContract",
@@ -5348,18 +5154,6 @@
         },
         {
             "message": "unknown tag: package",
-            "line": " lib/routers/teams.js:1"
-        },
-        {
-            "message": "unknown tag: copyright",
-            "line": " lib/routers/teams.js:1"
-        },
-        {
-            "message": "unknown tag: license",
-            "line": " lib/routers/teams.js:1"
-        },
-        {
-            "message": "unknown tag: package",
             "line": " lib/routers/workdays.js:1"
         },
         {
@@ -5545,10 +5339,6 @@
         {
             "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
             "line": " lib/routers/snapshot.js:1"
-        },
-        {
-            "message": "Missing item type\nUpwork auth library for using with public API by OAuth",
-            "line": " lib/routers/teams.js:1"
         },
         {
             "message": "Missing item type\nUpwork auth library for using with public API by OAuth",

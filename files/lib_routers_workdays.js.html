@@ -103,7 +103,6 @@
                                 <li><a href="../modules/routes.reports.finance.earnings.html">routes.reports.finance.earnings</a></li>
                                 <li><a href="../modules/routes.reports.time.html">routes.reports.time</a></li>
                                 <li><a href="../modules/routes.snapshot.html">routes.snapshot</a></li>
-                                <li><a href="../modules/routes.teams.html">routes.teams</a></li>
                                 <li><a href="../modules/routes.workdays.html">routes.workdays</a></li>
                                 <li><a href="../modules/routes.workdiary.html">routes.workdiary</a></li>
                             </ul>
@@ -188,7 +187,7 @@ exports.Workdays = function(api) {
  */
 exports.Workdays.prototype.getByCompany = function(company, fromDate, tillDate, params, callback) {
   debug(&#x27;running request&#x27;);
-  this.api.client.get(&#x27;team/v2/workdays/companies/&#x27; + company + &#x27;/&#x27; + fromDate + &#x27;,&#x27; + tillDate, params, callback);
+  this.api.client.get(&#x27;team/v3/workdays/companies/&#x27; + company + &#x27;/&#x27; + fromDate + &#x27;,&#x27; + tillDate, params, callback);
 }
 
 /**
@@ -204,7 +203,7 @@ exports.Workdays.prototype.getByCompany = function(company, fromDate, tillDate, 
  */
 exports.Workdays.prototype.getByContract = function(contract, fromDate, tillDate, params, callback) {
   debug(&#x27;running request&#x27;);
-  this.api.client.get(&#x27;team/v2/workdays/contracts/&#x27; + company + &#x27;/&#x27; + fromDate + &#x27;,&#x27; + tillDate, params, callback);
+  this.api.client.get(&#x27;team/v3/workdays/contracts/&#x27; + contract + &#x27;/&#x27; + fromDate + &#x27;,&#x27; + tillDate, params, callback);
 }
 
     </pre>

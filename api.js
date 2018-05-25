@@ -64,7 +64,6 @@ YUI.add("yuidoc-meta", function(Y) {
         "routes.reports.finance.earnings",
         "routes.reports.time",
         "routes.snapshot",
-        "routes.teams",
         "routes.workdays",
         "routes.workdiary"
     ],
@@ -200,10 +199,6 @@ YUI.add("yuidoc-meta", function(Y) {
         {
             "displayName": "routes.snapshot",
             "name": "routes.snapshot"
-        },
-        {
-            "displayName": "routes.teams",
-            "name": "routes.teams"
         },
         {
             "displayName": "routes.workdays",

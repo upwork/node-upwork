@@ -103,7 +103,6 @@
                                 <li><a href="../modules/routes.reports.finance.earnings.html">routes.reports.finance.earnings</a></li>
                                 <li><a href="../modules/routes.reports.time.html">routes.reports.time</a></li>
                                 <li><a href="../modules/routes.snapshot.html">routes.snapshot</a></li>
-                                <li><a href="../modules/routes.teams.html">routes.teams</a></li>
                                 <li><a href="../modules/routes.workdays.html">routes.workdays</a></li>
                                 <li><a href="../modules/routes.workdiary.html">routes.workdiary</a></li>
                             </ul>
@@ -180,15 +179,14 @@ exports.Workdiary = function(api) {
  *
  * @method get
  * @param company {String} Company
- * @param username {String} Username
  * @param date {String} Date
  * @param params {Hash} Parameters
  * @param callback {String} Callback function
  * @async
  */
-exports.Workdiary.prototype.get = function(company, username, date, params, callback) {
+exports.Workdiary.prototype.get = function(company, date, params, callback) {
   debug(&#x27;running request&#x27;);
-  this.api.client.get(&#x27;team/v1/workdiaries/&#x27; + company + &#x27;/&#x27; + username + &#x27;/&#x27; + date, params, callback);
+  this.api.client.get(&#x27;team/v3/workdiaries/companies/&#x27; + company + &#x27;/&#x27; + date, params, callback);
 }
 
 /**
@@ -203,7 +201,7 @@ exports.Workdiary.prototype.get = function(company, username, date, params, call
  */
 exports.Workdiary.prototype.getByContract = function(contract, date, params, callback) {
   debug(&#x27;running request&#x27;);
-  this.api.client.get(&#x27;team/v2/workdiaries/contracts/&#x27; + contract + &#x27;/&#x27; + date, params, callback);
+  this.api.client.get(&#x27;team/v3/workdiaries/contracts/&#x27; + contract + &#x27;/&#x27; + date, params, callback);
 }
 
     </pre>
