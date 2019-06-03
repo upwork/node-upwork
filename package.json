@@ -34,7 +34,7 @@
     "test": "mocha --timeout 3500"
   },
   "devDependencies": {
-    "mocha": "~1.21.4"
+    "mocha": "6.1.4"
   },
   "engines": {
     "node": "*"
