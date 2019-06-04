@@ -19,8 +19,8 @@
   },
   "main": "index",
   "dependencies": {
+    "node-odesk": "github:giorgio-zamparelli/node-odesk",
     "oauth": "0.9.10",
-    "node-upwork": "0.0.7",
     "pkginfo": "*"
   },
   "keywords": [
