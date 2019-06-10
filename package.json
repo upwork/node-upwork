@@ -20,7 +20,7 @@
   "main": "index",
   "dependencies": {
     "oauth": "0.9.10",
-    "node-upwork": "0.0.8",
+    "node-upwork": "0.0.9",
     "pkginfo": "*"
   },
   "keywords": [
