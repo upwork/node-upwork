@@ -1,5 +1,9 @@
 # Release History
 
+## 1.3.2
+* Update lodash dependency to >=4.17.13 (secufity fix)
+* Fix GitHub issue #13
+
 ## 1.3.1
 * Update mocha to 6.1.4
 * Update dependency to node-upwork
