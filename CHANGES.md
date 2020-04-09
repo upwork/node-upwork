@@ -1,5 +1,14 @@
 # Release History
 
+# 1.3.6
+* CVE-2020-7598
+
+## 1.3.5
+* Fixed issue #31
+
+## 1.3.4
+SKIPED
+
 ## 1.3.3
 * Add Specialties API
 * Add Skills V2 API

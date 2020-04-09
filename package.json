@@ -1,7 +1,7 @@
 {
   "name": "upwork-api",
   "description": "Node.JS bindings for Upwork API",
-  "version": "1.3.5",
+  "version": "1.3.6",
   "author": {
     "name": "Maksym Novozhylov",
     "email": "mnovozhilov@upwork.com"
@@ -35,7 +35,7 @@
     "test": "mocha --timeout 3500"
   },
   "devDependencies": {
-    "mocha": "~6.1.4"
+    "mocha": "~7.1.1"
   },
   "engines": {
     "node": "*"
