@@ -1,5 +1,8 @@
 # Release History
 
+# 1.3.7
+* Add Room Messages API
+
 # 1.3.6
 * CVE-2020-7598
 
