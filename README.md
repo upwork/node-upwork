@@ -1,7 +1,7 @@
-Node.JS bindings for Upwork API
+Node.JS bindings for Upwork API (OAuth1)
 ===========
 
-[![License](http://img.shields.io/packagist/l/upwork/php-upwork.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
+[![License](https://img.shields.io/github/license/upwork/node-upwork)](http://www.apache.org/licenses/LICENSE-2.0.html)
 [![npm](https://img.shields.io/npm/v/upwork-api.svg)](https://www.npmjs.com/package/upwork-api)
 [![GitHub release](https://img.shields.io/github/release/upwork/node-upwork.svg)](https://github.com/upwork/node-upwork/releases)
 [![Build Status](https://travis-ci.org/upwork/node-upwork.svg)](https://travis-ci.org/upwork/node-upwork)
