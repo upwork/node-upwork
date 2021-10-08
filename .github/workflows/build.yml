@@ -16,7 +16,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest, macos-latest]
-        node: [ '12', '14', '16' ]
+        node: [ '12', '14' ]
 
     name: Node ${{ matrix.node }}
     steps:
