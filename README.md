@@ -1,4 +1,4 @@
-Node.JS bindings for Upwork API (OAuth1)
+Node.JS bindings for Upwork API (OAuth1) - DEPRECATED
 ===========
 
 [![License](https://img.shields.io/github/license/upwork/node-upwork)](http://www.apache.org/licenses/LICENSE-2.0.html)
